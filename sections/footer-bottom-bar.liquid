@@ -1,0 +1,68 @@
+  <div class="bottom-footer">
+  <div class="page-width">
+    <div class="footer-flex">
+      <div class="footer-bottom-left">
+        <a href="{{ section.settings.footerleft1 }}">{{ section.settings.labelleft1 }}</a>
+        <a href="{{ section.settings.footerleft2 }}">{{ section.settings.labelleft2 }}</a>
+      </div>
+      <div class="footer-copyright">
+        <a href=" {{ section.settings.footerright1 }}">{{section.settings.labelright1}}</a>
+        <a href=" {{ section.settings.footerright2 }}">{{section.settings.labelright2}}</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+{% schema %}
+{
+  "name": "Footer bottom bar",
+  "settings": [
+    {
+      "id": "footerleft1",
+      "type": "url",
+      "label": "Footer Bottom Bar Left Link 1"
+    },
+      {
+        "id": "labelleft1",
+        "type": "text",
+        "label": "Footer Bottom Bar Left Link Text"
+      },
+    {
+      "id": "footerleft2",
+      "type": "url",
+      "label": "Footer Bottom Bar Left Link 2"
+    },
+      {
+        "id": "labelleft2",
+        "type": "text",
+        "label": "Footer Bottom Bar Left Link Text 2"
+      },
+    {
+      "id": "footerright1",
+      "type": "url",
+      "label": "Footer Bottom Bar Right Link 1"
+    },
+      {
+        "id": "labelright1",
+        "type": "text",
+        "label": "Footer Bottom Bar Right Link Text 1"
+      },
+    {
+      "id": "footerright2",
+      "type": "url",
+      "label": "Footer Bottom Bar Right Link 2"
+    },
+      {
+        "id": "labelright2",
+        "type": "text",
+        "label": "Footer Bottom Bar Right Link Text 2"
+      }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
