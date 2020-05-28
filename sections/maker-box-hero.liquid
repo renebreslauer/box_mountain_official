@@ -1,0 +1,16 @@
+<div class="subpage_hero">
+    <img class="subpage_hero_image" src="{{section.settings.maker_box_home_hero | img_url: '1920x' }}">
+</div>
+
+{% schema %}
+{
+    "name": "Maker Box Hero Image",
+    "settings" : [
+    {
+        "type": "image_picker",
+        "id": "maker_box_home_hero",
+        "label": "Maker Box Homepage Hero Image"
+    }
+  ]
+}
+{% endschema %}
