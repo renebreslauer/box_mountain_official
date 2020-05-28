@@ -212,6 +212,66 @@
           "link_center": "shopify:\/\/pages\/pips-mountain",
           "link_right": "shopify:\/\/pages\/cryptid-crate"
         }
+      },
+      "maker-box-hero": {
+        "type": "maker-box-hero",
+        "settings": {
+          "maker_box_home_hero": "shopify:\/\/shop_images\/bg1-2.jpg",
+          "maker_box_hero_title": "3D Printer Filament Samples Delivered Monthly",
+          "maker_box_hero_body_text": "Try filaments from the top manufactureres without the expense of a full spool. Starting at just $19\/month",
+          "maker_box_hero_button": "shopify:\/\/pages\/maker-box-plans"
+        }
+      },
+      "maker-box-instructions": {
+        "type": "maker-box-instructions",
+        "settings": {
+          "step1_header": "Choose a Plan",
+          "step1_text": "Choose easy printing or explorative printing materials, and how often you want to receive your shipment",
+          "step1_image": "shopify:\/\/shop_images\/filamentbundles.jpg",
+          "step2_header": "Unpack Your Box",
+          "step2_text": "We work with top filament manufacturers like colorFabb and polyalchemy to get you access to a wide range of materials and colors.",
+          "step2_image": "shopify:\/\/shop_images\/box2.jpg",
+          "step3_header": "Explore New Filaments",
+          "step3_text": "Discover amazing new filaments without the expense of buying full filament spools - Or build a library of print colors with our Easy Plan.",
+          "step3_image": "shopify:\/\/shop_images\/box3.jpg",
+          "step4_header": "Buy the Full Spool",
+          "step4_text": "Order the full spools of filaments you like from the manufacturers at a members exclusive discount.",
+          "step4_image": "shopify:\/\/shop_images\/box4.jpg"
+        }
+      },
+      "cryptid-crate-hero": {
+        "type": "cryptid-crate-hero",
+        "settings": {
+          "cryptid_hero_top": "Starting at $19.99\/MO <br> Free Shipping in the US!",
+          "cryptid_hero_middle": "Cryptid Crate",
+          "cryptid_hero_bottom": "A Monthly Subscription Box Filled with Cryptozoology and Paranormal Themed Items",
+          "cryptid_hero_button_text": "Get Started",
+          "cryptid_hero_link": "shopify:\/\/pages\/cryptid-crate-plans",
+          "cryptid_hero_image": "shopify:\/\/shop_images\/Screen_Shot_2020-05-28_at_11.15.21_AM.png",
+          "cryptid_hero_step_heading1": "1. Sign Up",
+          "cryptid_hero_step_text1": "Complete the size survey and choose your description length",
+          "cryptid_hero_step_heading2": "2. Wait",
+          "cryptid_hero_step_text2": "Patiently wait until the first of the following month",
+          "cryptid_hero_step_heading3": "3. Enjoy!",
+          "cryptid_hero_step_text3": "You will receive a carefully selected and packed box filled with awesome items any cryptid fan is sure to love!"
+        }
+      },
+      "cryptid-home-product": {
+        "type": "cryptid-home-product",
+        "settings": {
+          "cryptid_home_product1": "shopify:\/\/shop_images\/Screen_Shot_2020-05-28_at_1.47.25_PM.png",
+          "cryptid_home_product2": "shopify:\/\/shop_images\/Screen_Shot_2020-05-28_at_1.47.42_PM.png",
+          "cryptid_home_product3": "shopify:\/\/shop_images\/Screen_Shot_2020-05-28_at_1.47.53_PM.png",
+          "cryptid_home_product_text1": "Paranormal wall art and home decor items handmade by local makers and artists from all over the country.",
+          "cryptid_home_product_text2": "Collectibles that will take your curiosity cabinets to the next level.",
+          "cryptid_home_product_text3": "T-shirts, hats, socks, and other accessories featuring your favorite cryptids, ghosts, and aliens.",
+          "cryptid_home_product_text4": "Books and films by the most talented minds in the cryptid world.",
+          "cryptid_home_product_text5": "Many other misc. cryptozoology-themed items that are sure to be instant conversation starters",
+          "capture_cryptids_title": "Capture the Cryptids",
+          "capture_cryptids_text": "Cryptid crate is a monthly subscription box filled with various cryptozoology and paranormal themed items to wear, display and collect. Expect a carefully curated box filled with creeptastic pieces from indie makers and artisans pertaining to bigfoot, sasquatch, UFOs, ghosts, and other cryptid and mysterious creatures (apparel, decor, media, etc). Still have more questions? See our FAQ!",
+          "capture_cryptids_button": "shopify:\/\/pages\/cryptid-crate-plans",
+          "capture_the_cryptids_button_text": "Get Started"
+        }
       }
     },
     "content_for_index": [

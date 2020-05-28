@@ -547,6 +547,8 @@ a:focus {
   margin: 0px 40px;
 }
 
+// CRYPTID CRATE HOMEPAGE
+
 .cryptid-crate-hero {
   display: flex;
   justify-content: center;
@@ -687,5 +689,43 @@ a:focus {
     &:hover {
       background-color: #1ddf3b;
     }
+  }
+}
+
+//FAQ
+
+.cryptid_faq {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+}
+.cryptid_faq_wrapper {
+  max-width: 1040px;
+  margin-bottom: 5rem;
+  h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 60px;
+    color: #f8f0ab;
+    margin: 0 0 40px;
+    letter-spacing: 0.077em;
+  }
+  h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    color: #f8f0ab;
+    letter-spacing: 0.077em;
+    margin: 0 0 15px;
+  }
+  p {
+    font-family: 'Bangers', cursive;
+    font-size: 14px;
+    color: #f8f0ab;
+    letter-spacing: 0.077em;
+    margin: 0 0 25px;
+    padding: 0 0 25px;
+    border-bottom: 1px solid #e1e1e1;
   }
 }
