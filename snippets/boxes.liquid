@@ -1,48 +1,66 @@
 <div class="page-width">
-<h1 class="site-hero">What type of box are <span>you</span> looking for?</h1>
+    <h1 class="site-hero">What type of box are
+        <span>you</span>
+        looking for?</h1>
 </div>
 
+
 <div class="page-width">
-<div class="hero-box-contain">
-  
-  <div class="box-container">
-  <div class="hero-box">
-    <img src="{{'box-makerbox.jpg' | asset_url }}">
-  </div>
-  <div class="hero-logo">
-    <img src="{{'logo-makerbox.png' | asset_url }}">
-  </div>
-  <div class="hero-desc">
-    <p>Curated 3D printer filament samples delivered monthly.</p>
-    <a class="link-underline" href="https://www.makerbox.me/">VISIT SITE</a>
-  </div>
-  </div>
-  
-  <div class="box-container">
-   <div class="hero-box">
-     	<img src="{{'box-pipsmtn.jpg' | asset_url }}">
+    <div class="hero-box-contain">
+        {% for link in linklists[section.settings.hero_linklist].links %}
+            {% if link.links == blank %}
+                <a class="nav-link" href="{{link.url}}">{{link.title}}
+                    <div class="box-container">
+                        <div class="hero-box">
+                            <img src="{{'box-makerbox.jpg' | asset_url }}">
+                        </div>
+                        <div class="hero-logo">
+                            <img src="{{'logo-makerbox.png' | asset_url }}">
+                        </div>
+                        <div class="hero-desc">
+                            <p>Curated 3D printer filament samples delivered monthly.</p>
+                            <a class="link-underline" href="https://www.makerbox.me/">VISIT SITE</a>
+                        </div>
+                    </div>
+                </a>
+            {% endif %}
+        {% endfor %}
+
+        {% for link in linklists[section.settings.hero_linklist].links %}
+        {% if link.links == blank %}
+            <a class="nav-link" href="{{link.url}}">{{link.title}}          
+              <div class="box-container">
+                <div class="hero-box">
+                <img src="{{'box-pipsmtn.jpg' | asset_url }}">
+            </div>
+            <div class="hero-logo">
+                <img src="{{'logo-pipsmtn.png' | asset_url }}">
+            </div>
+            <div class="hero-desc">
+                <p>The monthly dice calendar box, 30 days of unique dice.</p>
+                <a class="link-underline" href="https://www.pipsmountain.com/">VISIT SITE</a>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        {% for link in linklists[section.settings.hero_linklist].links %}
+        {% if link.links == blank %}
+            <a class="nav-link" href="{{link.url}}">{{link.title}}
+        <div class="box-container">
+            <div class="hero-box">
+                <img src="{{'box-cryptidcrate.jpg' | asset_url }}">
+            </div>
+            <div class="hero-logo">
+                <img src="{{'logo-cryptidcrate.png' | asset_url }}">
+            </div>
+            <div class="hero-desc">
+                <p>Cryptozoology and paranormally themed boxes.</p>
+                <a class="link-underline" href="https://www.cryptidcrate.com/">VISIT SITE</a>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
     </div>
-    <div class="hero-logo">
-      	<img src="{{'logo-pipsmtn.png' | asset_url }}">
-    </div>
-    <div class="hero-desc">
-      <p>The monthly dice calendar box, 30 days of unique dice.</p>
-     <a class="link-underline" href="https://www.pipsmountain.com/">VISIT SITE</a>
-    </div> 
-  </div>
-  
-  <div class="box-container">
-    <div class="hero-box">
-      	<img src="{{'box-cryptidcrate.jpg' | asset_url }}">
-      </div>
-      <div class="hero-logo">
-        <img src="{{'logo-cryptidcrate.png' | asset_url }}">
-      </div>
-      <div class="hero-desc">
-        <p>Cryptozoology and paranormally themed boxes.</p>
-        <a class="link-underline" href="https://www.cryptidcrate.com/">VISIT SITE</a>
-     </div>
-  </div>
- 
-</div>
 </div>
