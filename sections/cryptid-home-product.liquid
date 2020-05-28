@@ -1,0 +1,70 @@
+<section class="cryptid_home_product">
+    <div class="cryptid_home_product_wrapper">
+        <div class="cryptid_home_product_images">
+            <img src="{{section.settings.cryptid_home_product1 | img_url: '300x'}}" class="cryptid_product_image">
+            <img src="{{section.settings.cryptid_home_product2 | img_url: '300x'}}" class="cryptid_product_image">
+            <img src="{{section.settings.cryptid_home_product3 | img_url: '300x'}}" class="cryptid_product_image">
+        </div>
+        <div class="cryptid_home_product_text">
+            <div class="cryptid_home_product_col1">
+                <p>{{section.settings.cryptid_home_product_text1}}</p>
+                <p>{{section.settings.cryptid_home_product_text2}}</p>
+            </div>
+            <div class="cryptid_home_product_col2">
+                <p>{{section.settings.cryptid_home_product_text3}}</p>
+            </div>
+            <div class="cryptid_home_product_col3">
+                <p>{{section.settings.cryptid_home_product_text4}}</p>
+                <p>{{section.settings.cryptid_home_product_text5}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "Cryptid Home Product",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "cryptid_home_product1",
+            "label": "Cryptid Home Product Image 1"
+        }, {
+            "type": "image_picker",
+            "id": "cryptid_home_product2",
+            "label": "Cryptid Home Product Image 2"
+        }, {
+            "type": "image_picker",
+            "id": "cryptid_home_product3",
+            "label": "Cryptid Home Product Image 3"
+        }, {
+            "type": "text",
+            "id": "cryptid_home_product_text1",
+            "label": "Cryptid Home Product Text 1",
+            "default": "Paranormal wall art and home decor items handmade by local makers and artists from all over the country."
+        }, {
+            "type": "text",
+            "id": "cryptid_home_product_text2",
+            "label": "Cryptid Home Product Text 2",
+            "default": "Collectibles that will take your curiosity cabinets to the next level."
+        }, {
+            "type": "text",
+            "id": "cryptid_home_product_text3",
+            "label": "Cryptid Home Product Text 3",
+            "default": "T-shirts, hats, socks, and other accessories featuring your favorite cryptids, ghosts, and aliens."
+        }, {
+            "type": "text",
+            "id": "cryptid_home_product_text4",
+            "label": "Cryptid Home Product Text 4",
+            "default": "Books and films by the most talented minds in the cryptid world."
+        }, {
+            "type": "text",
+            "id": "cryptid_home_product_text5",
+            "label": "Cryptid Home Product Text 5",
+            "default": "Many other misc. cryptozoology-themed items that are sure to be instant conversation starters"
+        }
+    ]
+}
+
+{% endschema %}
