@@ -570,6 +570,7 @@ a:focus {
   color: #f8f0ab;
   padding: 30px;
   text-align: center;
+  max-height: 70vh;
   p {
     margin-bottom: 3rem;
     color: #f8f0ab;
@@ -584,7 +585,7 @@ a:focus {
 }
 .cryptid-hero-image {
   overflow: hidden;
-  height: 100%;
+  max-height: 70vh;
 }
 
 .cryptid_image {
@@ -655,10 +656,36 @@ a:focus {
 }
 
 .cryptid_home_product_text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+  max-width: 1040px;
+  align-items: center;
+  p {
+    color: #f8f0ab;
+    font-family: 'Bangers', cursive;
+    font-size: 16px;
+    padding: 1rem 2rem;
+  }
 }
-.cryptid_home_product_col1 {
-}
-.cryptid_home_product_col2 {
-}
-.cryptid_home_product_col3 {
+.capture_the_cryptids {
+  h1 {
+    font-family: 'Bangers', cursive;
+    color: #f8f0ab;
+    font-size: 60px;
+    margin-top: 7rem;
+  }
+  p {
+    font-family: 'Bangers', cursive;
+    color: #f8f0ab;
+    font-size: 18px;
+    max-width: 1040px;
+    margin: 2rem 0;
+  }
+  button {
+    margin-bottom: 5rem;
+    &:hover {
+      background-color: #1ddf3b;
+    }
+  }
 }
