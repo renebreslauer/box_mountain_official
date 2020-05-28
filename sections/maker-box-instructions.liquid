@@ -1,19 +1,57 @@
 <section class="maker_box_instructions">
     <div class="maker_box_instructions_container">
-        <h1 class="maker_box_instructions_title">How it Works</h1>
-        <span></span>
+        <div class="maker_box_instructions_title">
+        <h1>How it Works</h1>
+        </div>
+        <span class="title_divider"></span>
 
-        <div class="instructional_steps_row">
+        <div class="instructional_steps_row_left">
             <div class="instructional_steps_text">
                 <div class="instructional_steps_header">
-                    <h1 class="instructional_steps_number">1</h1>
-                    <h2>{{section.settings.step1_header}}</h2>
+                    <h2><span class="instructional_steps_number">1</span>
+                    {{section.settings.step1_header}}</h2>
                 </div>
                 <p>{{section.settings.step1_text}}</p>
             </div>
             <img src="{{section.settings.step1_image | img_url: '500x'}}" class="instruction_image">
         </div>
-    </div>
+    
+
+        <div class="instructional_steps_row_right">
+        <img src="{{section.settings.step2_image | img_url: '500x'}}" class="instruction_image">
+            <div class="instructional_steps_text">
+                <div class="instructional_steps_header">
+                    <h2><span class="instructional_steps_number">2</span>
+                    {{section.settings.step2_header}}</h2>
+                </div>
+                <p>{{section.settings.step2_text}}</p>
+            </div>
+        </div>
+
+             <div class="instructional_steps_row_left">
+            <div class="instructional_steps_text">
+                <div class="instructional_steps_header">
+                    <h2><span class="instructional_steps_number">3</span>
+                    {{section.settings.step3_header}}</h2>
+                </div>
+                <p>{{section.settings.step3_text}}</p>
+            </div>
+            <img src="{{section.settings.step3_image | img_url: '500x'}}" class="instruction_image">
+        </div>
+    
+
+        <div class="instructional_steps_row_right">
+            <img src="{{section.settings.step4_image | img_url: '500x'}}" class="instruction_image">
+            <div class="instructional_steps_text">
+                <div class="instructional_steps_header">
+                    <h2><span class="instructional_steps_number">4</span>
+                    {{section.settings.step4_header}}</h2>
+                </div>
+                <p>{{section.settings.step4_text}}</p>
+            </div>
+        </div>
+
+        </div>
 </section>
 
 
@@ -36,7 +74,53 @@
             "type": "image_picker",
             "id": "step1_image",
             "label": "Step 1 Image"
+        },
+         {
+            "type": "text",
+            "id": "step2_header",
+            "label": "Step 2 Header",
+            "default": "Unpack Your Box"
+        }, {
+            "type": "text",
+            "id": "step2_text",
+            "label": "Step 2 Text",
+            "default": "We work with top filament manufacturers like colorFabb and polyalchemy to get you access to a wide range of materials and colors."
+        }, {
+            "type": "image_picker",
+            "id": "step2_image",
+            "label": "Step 2 Image"
+        },
+         {
+            "type": "text",
+            "id": "step3_header",
+            "label": "Step 3 Header",
+            "default": "Explore New Filaments"
+        }, {
+            "type": "text",
+            "id": "step3_text",
+            "label": "Step 3 Text",
+            "default": "Discover amazing new filaments without the expense of buying full filament spools - Or build a library of print colors with our Easy Plan."
+        }, {
+            "type": "image_picker",
+            "id": "step3_image",
+            "label": "Step 3 Image"
+        },
+        {
+            "type": "text",
+            "id": "step4_header",
+            "label": "Step 4 Header",
+            "default": "Buy the Full Spool"
+        }, {
+            "type": "text",
+            "id": "step4_text",
+            "label": "Step 4 Text",
+            "default": "Order the full spools of filaments you like from the manufacturers at a members exclusive discount."
+        }, {
+            "type": "image_picker",
+            "id": "step4_image",
+            "label": "Step 4 Image"
         }
+
     ]
 }
 

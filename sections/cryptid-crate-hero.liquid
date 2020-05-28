@@ -1,0 +1,53 @@
+<section class="cryptid-crate-hero">
+    <div class="cryptid-hero_container">
+        <div class="cryptid-hero-text">
+            <p>{{section.settings.cryptid_hero_top}}</p>
+            <h1>{{section.settings.cryptid_hero_middle}}</h1>
+            <p>{{section.settings.cryptid_hero_bottom}}</p>
+            <a href="{{section.settings.cryptid_hero_link}}"><button class="cryptid_hero_button">
+                {{section.settings.cryptid_hero_button_text}}
+            </button>
+            </a>
+        </div>
+        <div class="cryptid-hero-image">
+       <img src="{{section.settings.cryptid_hero_image}}" >
+        </div>
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "Cryptid Crate Hero",
+    "settings": [
+        {
+            "type": "text",
+            "id": "cryptid_hero_top",
+            "label": "Cryptid Hero Top Text",
+            "default": "Starting at $19.99/MO <br> Free Shipping in the US!"
+        }, {
+            "type": "text",
+            "id": "cryptid_hero_middle",
+            "label": "Cryptid Hero Middle Text",
+            "default": "Cryptid Crate"
+        }, {
+            "type": "text",
+            "id": "cryptid_hero_bottom",
+            "label": "Cryptid Hero Buttom Text",
+            "default": "A Monthly Subscription Box Filled with Cryptozoology and Paranormal Themed Items"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_hero_button_text",
+            "label": "Cryptid Hero Button Text",
+            "default": "Get Started"
+        },
+        {
+            "type": "url",
+            "id": "cryptid_hero_link",
+            "label": "Cryptid Hero Button Link"
+        }
+    ]
+}
+
+{% endschema %}
