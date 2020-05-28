@@ -1,16 +1,43 @@
 <div class="subpage_hero">
+
     <img class="subpage_hero_image" src="{{section.settings.maker_box_home_hero | img_url: '1920x' }}">
+
+    <div class="subpage_hero_text">
+        <h1>{{section.settings.maker_box_hero_title}}</h1>
+        <p>{{section.settings.maker_box_hero_body_text}}</p>
+        <a href="{{section.settings.maker_box_hero_button}}">
+            <button>GET STARTED</button>
+        </a>
+    </div>
+
 </div>
 
 {% schema %}
+
 {
-    "name": "Maker Box Hero Image",
-    "settings" : [
-    {
-        "type": "image_picker",
-        "id": "maker_box_home_hero",
-        "label": "Maker Box Homepage Hero Image"
-    }
-  ]
+    "name": "Maker Box Hero",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "maker_box_home_hero",
+            "label": "Maker Box Homepage Hero Image"
+        }, {
+            "type": "text",
+            "id": "maker_box_hero_title",
+            "label": "Maker Box Hero Title",
+            "default": "3D Printer Filament Samples Delivered Monthly"
+        }, {
+            "type": "text",
+            "id": "maker_box_hero_body_text",
+            "label": "Maker Box Hero Body Text",
+            "default": "Try filaments from the top manufactureres without the expense of a full spool. Starting at just $19/month"
+        },
+        {
+            "type": "url",
+            "id": "maker_box_hero_button",
+            "label": "Maker Box Hero Button"
+        }
+    ]
 }
+
 {% endschema %}

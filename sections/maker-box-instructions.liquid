@@ -1,0 +1,43 @@
+<section class="maker_box_instructions">
+    <div class="maker_box_instructions_container">
+        <h1 class="maker_box_instructions_title">How it Works</h1>
+        <span></span>
+
+        <div class="instructional_steps_row">
+            <div class="instructional_steps_text">
+                <div class="instructional_steps_header">
+                    <h1 class="instructional_steps_number">1</h1>
+                    <h2>{{section.settings.step1_header}}</h2>
+                </div>
+                <p>{{section.settings.step1_text}}</p>
+            </div>
+            <img src="{{section.settings.step1_image | img_url: '500x'}}" class="instruction_image">
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+
+{
+    "name": "Maker Box Instructions",
+    "settings": [
+        {
+            "type": "text",
+            "id": "step1_header",
+            "label": "Step 1 Header",
+            "default": "Choose a Plan"
+        }, {
+            "type": "text",
+            "id": "step1_text",
+            "label": "Step 1 Text",
+            "default": "Choose easy printing or explorative printing materials, and how often you want to receive your shipment."
+        }, {
+            "type": "image_picker",
+            "id": "step1_image",
+            "label": "Step 1 Image"
+        }
+    ]
+}
+
+{% endschema %}
