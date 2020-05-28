@@ -1,5 +1,5 @@
-/*=============custom==========*/
-/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/*=============custom==========*/ /*fonts*/
 body,
 input,
 textarea,
@@ -497,8 +497,6 @@ a:focus {
   display: inline-block;
   margin: 30px;
 }
-.instructional_steps_number {
-}
 
 .instructional_steps_row_left {
   display: grid;
@@ -549,19 +547,90 @@ a:focus {
   margin: 0px 40px;
 }
 
-.cryptid-hero {
+.cryptid-crate-hero {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .cryptid-hero_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin: 0px 40px;
+  max-width: 1040px;
 }
 .cryptid-hero-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #152100;
+  font-family: 'Bangers', cursive;
+  color: #f8f0ab;
+  padding: 30px;
+  text-align: center;
+  p {
+    margin-bottom: 3rem;
+    color: #f8f0ab;
+  }
+  h1 {
+    color: #f8f0ab;
+    font-family: 'Bangers', cursive;
+    font-size: 60px;
+    letter-spacing: 0.077em;
+    margin-bottom: 3rem;
+  }
 }
 .cryptid-hero-image {
+  height: 50vh;
+}
+
+.cryptid_image {
+  object-fit: cover;
+  height: 50vh;
+}
+
+.cryptid_hero_button {
+  padding: 19.2px 80px;
+  background-color: #f8f0ab;
+  color: #152100;
+  font-size: 16px;
+  font-family: 'Bangers', cursive;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  letter-spacing: 0.2em;
+  &:hover {
+    background-color: #d7bee4;
+    color: white;
+  }
+}
+
+.cryptid_steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  justify-items: center;
+  width: 1140px;
+  margin-top: 5rem;
+}
+
+.cryptid_step_box {
+  text-align: center;
+  max-width: 346px;
+  padding: 20px;
+  font-family: 'Bangers', cursive;
+  p {
+    color: #f8f0ab;
+  }
+  h3 {
+    font-family: 'Bangers', cursive;
+    color: #f8f0ab;
+  }
+}
+
+.cryptid_section_wrapper {
+  display: flex;
+  justify-content: center;
 }

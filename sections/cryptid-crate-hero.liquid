@@ -1,16 +1,34 @@
 <section class="cryptid-crate-hero">
-    <div class="cryptid-hero_container">
-        <div class="cryptid-hero-text">
-            <p>{{section.settings.cryptid_hero_top}}</p>
-            <h1>{{section.settings.cryptid_hero_middle}}</h1>
-            <p>{{section.settings.cryptid_hero_bottom}}</p>
-            <a href="{{section.settings.cryptid_hero_link}}"><button class="cryptid_hero_button">
-                {{section.settings.cryptid_hero_button_text}}
-            </button>
-            </a>
+    <div class="cryptid_section_wrapper">
+        <div class="cryptid-hero_container">
+            <div class="cryptid-hero-text">
+                <p>{{section.settings.cryptid_hero_top}}</p>
+                <h1>{{section.settings.cryptid_hero_middle}}</h1>
+                <p>{{section.settings.cryptid_hero_bottom}}</p>
+                <a href="{{section.settings.cryptid_hero_link}}">
+                    <button class="cryptid_hero_button">
+                        {{section.settings.cryptid_hero_button_text}}
+                    </button>
+                </a>
+            </div>
+            <div class="cryptid-hero-image">
+                <img src="{{section.settings.cryptid_hero_image | img_url: '900x' }}" class="cryptid_image">
+            </div>
         </div>
-        <div class="cryptid-hero-image">
-       <img src="{{section.settings.cryptid_hero_image}}" >
+    </div>
+
+    <div class="cryptid_steps">
+        <div class="cryptid_step_box">
+            <h3>{{section.settings.cryptid_hero_step_heading1}}</h3>
+            <p>{{section.settings.cryptid_hero_step_text1}}</p>
+        </div>
+        <div class="cryptid_step_box">
+            <h3>{{section.settings.cryptid_hero_step_heading2}}</h3>
+            <p>{{section.settings.cryptid_hero_step_text2}}</p>
+        </div>
+        <div class="cryptid_step_box">
+            <h3>{{section.settings.cryptid_hero_step_heading3}}</h3>
+            <p>{{section.settings.cryptid_hero_step_text3}}</p>
         </div>
     </div>
 </section>
@@ -24,13 +42,15 @@
             "type": "text",
             "id": "cryptid_hero_top",
             "label": "Cryptid Hero Top Text",
-            "default": "Starting at $19.99/MO <br> Free Shipping in the US!"
-        }, {
+            "default": "Starting at $19.99/MO<br>Free Shipping in the US!"
+        }, 
+        {
             "type": "text",
             "id": "cryptid_hero_middle",
             "label": "Cryptid Hero Middle Text",
             "default": "Cryptid Crate"
-        }, {
+        }, 
+        {
             "type": "text",
             "id": "cryptid_hero_bottom",
             "label": "Cryptid Hero Buttom Text",
@@ -46,6 +66,50 @@
             "type": "url",
             "id": "cryptid_hero_link",
             "label": "Cryptid Hero Button Link"
+        },
+        {
+            "type": "image_picker",
+            "id": "cryptid_hero_image",
+            "label": "Cryptid Hero Image"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_hero_step_heading1",
+            "label": "Cryptid Hero Step Heading 1",
+            "default": "1. Sign Up"
+
+        },
+        {
+            "type": "text",
+            "id": "cryptid_hero_step_text1",
+            "label": "Cryptid Hero Step Text 1",
+            "default": "Complete the size survey and choose your description length"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_hero_step_heading2",
+            "label": "Cryptid Hero Step Heading 2",
+            "default": "2. Wait"
+
+        },
+        {
+            "type": "text",
+            "id": "cryptid_hero_step_text2",
+            "label": "Cryptid Hero Step Text 2",
+            "default": "Patiently wait until the first of the following month"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_hero_step_heading3",
+            "label": "Cryptid Hero Step Heading 3",
+            "default": "3. Enjoy!"
+
+        },
+        {
+            "type": "text",
+            "id": "cryptid_hero_step_text3",
+            "label": "Cryptid Hero Step Text 3",
+            "default": "You will receive a carefully selected and packed box filled with awesome items any cryptid fan is sure to love!"
         }
     ]
 }
