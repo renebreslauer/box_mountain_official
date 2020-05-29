@@ -53,7 +53,7 @@ h6,
 
 .announcement-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0 5%;
   top: 0;
@@ -110,10 +110,12 @@ a:focus {
   text-align: right;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-top: -1rem;
 }
 .announcement-links a {
   color: white;
 }
+
 .site-nav {
   text-align: left;
 }
@@ -255,9 +257,9 @@ a:focus {
   text-decoration-skip: ink;
 }
 /*hero boxes*/
-#MainContent > div:nth-child(2) {
-  max-width: 2000px;
-}
+// #MainContent > div:nth-child(2) {
+//   max-width: 2000px;
+// }
 .hero-box-contain {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -331,11 +333,13 @@ a:focus {
   background-size: contain;
   padding: 80px 0;
   margin: 80px 0;
+  width: 100vw;
 }
 .reviews-contain h2 {
   color: white;
   letter-spacing: normal;
   font-size: 26px;
+  width: 100vw;
 }
 .carousel-contain {
   padding: 0 10%;

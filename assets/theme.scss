@@ -5050,6 +5050,15 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 .site-header__logo-link {
   display: inline-block;
   word-break: break-word;
+  font-weight: 600;
+  color: white;
+  font-size: 21px;
+  font-family: p22-underground, sans-serif;
+  a {
+    font-family: p22-underground, sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+  }
 
   .logo-align--center & {
     @include media-query($medium-up) {
@@ -5205,8 +5214,22 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 /// Announcement bar
 
 .announcement-bar {
+  display: flex;
+  justify-content: center;
   z-index: $z-index-announcement-bar;
   // position: relative;
+  width: 100vw;
+  height: 70px;
+  background: #1a1c45;
+  color: white;
+  align-items: center;
+}
+.announcement_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
 }
 
 .announcement-bar--link {
