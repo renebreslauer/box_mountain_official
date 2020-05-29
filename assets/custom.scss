@@ -769,3 +769,42 @@ a:focus {
 .maker-box-nav-link {
   padding: 0px 15px;
 }
+
+// Cryptid Crate Nav
+
+.cryptid-box-nav {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 8px 16px;
+  background-color: #152100;
+  border-bottom: 5px solid black;
+  height: 6rem;
+}
+
+.cryptid-box-nav-wrapper {
+  width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  a {
+    color: #385e03;
+    text-transform: uppercase;
+    font-family: 'Bangers', cursive;
+    font-size: 18px;
+    letter-spacing: 0.077em;
+    &:hover {
+      color: #f8f0ab;
+    }
+  }
+}
+
+.cryptid-box-nav-link {
+  padding: 0px 15px;
+}
+
+.cryptid-box-nav-logo {
+  width: 80px;
+  margin-top: 5px;
+}
