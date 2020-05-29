@@ -1,0 +1,29 @@
+<section class="maker-box-nav">
+    <div class="maker-box-nav-wrapper">
+        <a href="{{section.settings.maker_box_nav_logo_link}}"><img class="maker-box-nav-logo" src="{{section.settings.maker_box_nav_logo | img_url: '150x'}}"></a>
+
+        <a class="maker-box-nav-link" href="#">Plans</a>
+        <a class="maker-box-nav-link" href="#">FAQ</a>
+        <a class="maker-box-nav-link" href="#">About</a>
+        <a class="maker-box-nav-link" href="#">Filaments</a>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Maker Box Nav",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "maker_box_nav_logo",
+            "label": "Maker Box Nav Logo"
+        },
+        {
+            "type": "url",
+            "id": "maker_box_nav_logo_link",
+            "label": "Maker Box Nav Logo Link"
+        }
+    ]
+}
+
+{% endschema %}

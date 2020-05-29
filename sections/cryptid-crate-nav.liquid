@@ -1,0 +1,29 @@
+<section class="cryptid-box-nav">
+    <div class="cryptid-box-nav-wrapper">
+        <a href="{{section.settings.cryptid_box_nav_logo_link}}"><img class="cryptid-box-nav-logo" src="{{section.settings.cryptid_box_nav_logo | img_url: '150x'}}"></a>
+
+        <a class="cryptid-box-nav-link" href="#">Plans</a>
+        <a class="cryptid-box-nav-link" href="#">FAQ</a>
+        <a class="cryptid-box-nav-link" href="#">About</a>
+        <a class="cryptid-box-nav-link" href="#">Filaments</a>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Cryptid Box Nav",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "cryptid_box_nav_logo",
+            "label": "Cryptid Box Nav Logo"
+        },
+        {
+            "type": "url",
+            "id": "cryptid_box_nav_logo_link",
+            "label": "Cryptid Box Nav Logo Link"
+        }
+    ]
+}
+
+{% endschema %}

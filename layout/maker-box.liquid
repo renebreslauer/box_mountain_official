@@ -115,6 +115,20 @@
         {%- render 'bold-common' -%}
         {%- render 'bold-ro-init' -%}
         {% include 'judgeme_core' %}
+
+        <style>
+            .announcement-bar {
+                background: #E9E9E9;
+            }
+            .announcement-bar a {
+                
+                    color: #1a1c45
+                }
+            .announcement-bar a:hover {
+                color: #0371FF;
+            }
+            
+        </style>
     </head>
 
     <body class="template-{{ request.page_type | handle }}">
@@ -126,6 +140,7 @@
         {%- endif -%}
 
         {% section 'header' %}
+        {% section 'maker-box-nav' %}
 
         <div class="page-container drawer-page-content" id="PageContainer">
 
