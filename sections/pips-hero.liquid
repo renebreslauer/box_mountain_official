@@ -1,0 +1,28 @@
+<section class="pips_hero">
+    <div class="pips_hero_wrapper">
+        <div class="pips_hero_title">{{section.settings.pips_hero_title}}</div>
+        <div class="pips_hero_subtitle">{{section.settings.pips_hero_subtitle}}</div>
+        <button>{{section.settings.pips_hero_button}}</button>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Maker Box Nav",
+    "settings": [
+        {
+            "type": "text",
+            "id": "pips_hero_title",
+            "label": "Pips Hero Title",
+            "default": "Pips Mountain"
+        },
+        {
+            "type": "text",
+            "id": "pips_hero_subtitle",
+            "label": "Pips Hero Subtitle",
+            "default": "The Monthly Dice Calendar Box"
+        }
+    ]
+}
+
+{% endschema %}
