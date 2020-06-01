@@ -1,14 +1,15 @@
 <section class="pips_hero">
-    <div class="pips_hero_wrapper">
+        <img class="pips_hero_image" src="{{section.settings.pips_hero_image | img_url: '950x' }}">
+       
         <div class="pips_hero_title">{{section.settings.pips_hero_title}}</div>
         <div class="pips_hero_subtitle">{{section.settings.pips_hero_subtitle}}</div>
-        <button>{{section.settings.pips_hero_button}}</button>
-    </div>
+        <a href="{{section.settings.pips_hero_link}}"><button class="pips_hero_button">{{section.settings.pips_hero_button_text}}</button></a>
+   
 </section>
 
 {% schema %}
 {
-    "name": "Maker Box Nav",
+    "name": "Pips Mountain Hero",
     "settings": [
         {
             "type": "text",
@@ -21,7 +22,24 @@
             "id": "pips_hero_subtitle",
             "label": "Pips Hero Subtitle",
             "default": "The Monthly Dice Calendar Box"
+        },
+          {
+            "type": "image_picker",
+            "id": "pips_hero_image",
+            "label": "Pips Hero Image"
+        },
+        {
+            "type": "text",
+            "id": "pips_hero_button_text",
+            "label": "Pips Hero Button Text",
+            "default": "Get Started"
+        },
+         {
+            "type": "url",
+            "id": "pips_hero_link",
+            "label": "Pips Hero Button URL"
         }
+
     ]
 }
 

@@ -412,10 +412,10 @@ a:focus {
 .subpage_hero_image {
   position: absolute;
   min-width: 100%;
-  opacity: 0.7;
   z-index: 1;
   min-height: 80vh;
   object-fit: cover;
+  opacity: 0.7;
 }
 
 @media (max-width: 1200px) {
@@ -806,4 +806,34 @@ a:focus {
 .cryptid-box-nav-logo {
   width: 80px;
   margin-top: 5px;
+}
+
+// Pips Mountain Homepage
+
+.pips_hero {
+  display: flex;
+  justify-content: center;
+  align-items: content;
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  object-fit: contain;
+  overflow: hidden;
+  object-position: top;
+  margin-top: -55px;
+}
+.pips_hero_image {
+  position: absolute;
+  min-width: 100%;
+  z-index: 1;
+  min-height: 80vh;
+  object-fit: cover;
+}
+.pips_hero_title {
+  position: absolute;
+  margin-top: 20rem;
+}
+.pips_hero_subtitle {
+}
+.pips_hero_button {
 }
