@@ -1,0 +1,42 @@
+<section class="maker-box-plans-hero">
+    <div class="maker_box_plans_hero_wrapper">
+        <div class="maker_box_plans_hero_text">
+            <h1>{{section.settings.maker_box_plans_hero_title}}</h1>
+            <span class="maker_box_plans_hero_divider"></span>
+            <h3>{{section.settings.maker_box_plans_hero_body}}</h3>
+        </div>
+        <img src="{{section.settings.maker_box_plans_hero_image | img_url: '250x'}}" class="maker_box_plans_hero_image">
+    </div>
+    <div class="maker_box_plans_announcement">{{section.settings.maker_box_plans_announcement}}</div>
+</section>
+
+{% schema %}
+{
+"name": "Maker Box Plans Hero",
+"settings": [
+{ "type": "text",
+    "id": "maker_box_plans_hero_title",
+    "label": "Maker Box Plans Hero Title",
+    "default": "Plans for Every Maker"
+},
+{
+    "type": "text",
+    "id": "maker_box_plans_hero_body",
+    "label": "Maker Box Plans Hero Body",
+    "default": "Pick how often and what size of filaments you would like to receive, we'll focus on you getting the best 3D printing filaments available."
+},
+{
+    "type": "image_picker",
+    "id": "maker_box_plans_hero_image",
+    "label": "Maker Box Plans Hero Image"
+},
+{
+    "type": "text",
+    "id": "maker_box_plans_announcement",
+    "label": "Maker Box Plans Announcement",
+    "default": "Sign-up today and receive a bonus filament sample in your first box!"
+}
+]
+}
+
+{% endschema %}

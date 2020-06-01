@@ -888,6 +888,8 @@ a:focus {
   margin-top: 5rem;
   h1 {
     color: #087b00;
+    font-family: Almaq, sans-serif;
+    font-weight: 500;
   }
 }
 .pip_info_grid {
@@ -991,4 +993,175 @@ a:focus {
 .pips_order_more_button {
   background-color: #676666;
   margin-left: 0.5rem;
+}
+
+// Pips Home How It Works Section
+
+.pips-how-it-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  h1 {
+    color: #077b00;
+    margin-bottom: 3rem;
+    font-family: Almaq, sans-serif;
+    font-weight: 500;
+  }
+}
+.pips_how_it_works_group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+  margin-bottom: 3rem;
+}
+.how_it_works_image {
+  border-radius: 200%;
+}
+.pips_how_it_works_step {
+  p {
+    font-family: Almaq, sans-serif;
+  }
+}
+.how_it_works_button {
+  color: white;
+  border: none;
+  outline: none;
+  width: 12rem;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  font-family: Almaq, sans-serif;
+  background-color: #077b00;
+  text-transform: uppercase;
+}
+
+// Pips Home About
+
+.pips-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  margin-top: 5rem;
+  h1 {
+    color: #077b00;
+    margin-bottom: 3rem;
+    font-family: Almaq, sans-serif;
+    font-weight: 500;
+  }
+}
+.pips_about_group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+  margin-bottom: 3rem;
+}
+.about_image {
+  border-radius: 200%;
+}
+.pips_about_step {
+  p {
+    font-family: Almaq, sans-serif;
+    color: black;
+  }
+}
+
+// Maker Box Plans Hero Section
+
+.maker-box-plans-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100vw;
+  flex-direction: column;
+  background: rgb(88, 208, 239);
+  background: linear-gradient(
+    36deg,
+    rgba(88, 208, 239, 1) 0%,
+    rgba(81, 144, 208, 1) 100%
+  );
+  top: 0;
+  position: relative;
+}
+
+.maker_box_plans_hero_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+}
+
+.maker_box_plans_announcement {
+  bottom: 0;
+  position: absolute;
+  background-color: #000000;
+  width: 100vw;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 19px;
+}
+// Maker Box Plans
+.maker-box-plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 5rem;
+}
+
+.maker_box_plans_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+}
+
+.maker_box_item {
+  background-color: #f5f6fa;
+  border: 1px solid #e1e1e1;
+  padding: 2rem;
+  margin: 1rem;
+  font-family: pt-sans-pro, sans-serif;
+  text-align: center;
+  h2 {
+  }
+  h1 {
+  }
+  p {
+    font-size: 16px;
+  }
+  button {
+    background-color: #1b71ff;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    width: 15rem;
+    font-weight: 600;
+    &:hover {
+      background-color: rgb(0, 204, 255);
+    }
+  }
+}
+
+// Maker Box Plans FAQ Section
+
+.maker-box-plans-faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #f8f8f8;
+}
+
+.maker_box_plans_faq_container {
+  text-align: center;
+  width: 1200px;
 }

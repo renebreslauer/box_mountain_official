@@ -1,0 +1,96 @@
+<section class="maker-box-plans-faq">
+    <div class="maker_box_plans_faq_container">
+        <h1>{{section.settings.maker_box_plans_faq_title}}</h1>
+        <h3 class="maker_box_plans_faq_question">
+            {{section.settings.maker_box_plans_question1}}
+        </h3>
+        <p>{{section.settings.maker_box_plans_answer1_part1}}</p>
+        <p>{{section.settings.maker_box_plans_answer1_part2}}</p>
+
+        <h3 class="maker_box_plans_plans_question">
+            {{section.settings.maker_box_plans_question2}}
+        </h3>
+        <p>{{section.settings.maker_box_plans_answer2_part1}}</p>
+        <p>{{section.settings.maker_box_plans_answer2_part2}}</p>
+        <p>{{section.settings.maker_box_plans_answer2_part3}}</p>
+
+
+        <h3 class="maker_box_plans_plans_question">
+            {{section.settings.maker_box_plans_question3}}
+        </h3>
+        <p>{{section.settings.maker_box_plans_answer3}}</p>
+        <h2>{{section.settings.maker_box_faq_final}}</h2>
+        <h2 class="faq_link">{{section.settings.maker_box_faq_link}}</h2>
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "Maker Box Plans FAQ",
+    "settings": [
+        {
+            "type": "text",
+            "id": "maker_box_plans_faq_title",
+            "label": "Maker Box Plans FAQ Title",
+            "default": "Frequently Asked Questions"
+        }, 
+        {
+            "type": "text",
+            "id": "maker_box_plans_question1",
+            "label": "Maker Box Plans Question 1",
+            "default": "How much filament do I receive with each box?"
+        },
+        {
+            "type": "text",
+            "id": "maker_box_plans_answer1_part1",
+            "label": "Maker Box Plans Answer 1 Part 1",
+            "default": "Each sample is roughly 16.5 meters in length. This is the equivalent to about 50 grams of PLA."
+        },
+        {
+            "type": "text",
+            "id": "maker_box_plans_answer1_part2",
+            "label": "Maker Box Plans Answer 1 Part 2",
+            "default": "We chose to do length instead of weight because some materials, such as metal filled ones, are a lot denser than your typical PLA. This would mean you would receive significantly less printing volume with the same weight of material"
+        },
+        {
+            "type": "text",
+            "id": "maker_box_plans_question2",
+            "label": "Maker Box Plans Question 2",
+            "default": "When will I receive my box?"
+        },
+        {
+            "type": "text",
+            "id": "maker_box_plans_answer2_part1",
+            "label": "Maker Box Plans Answer 2 Part 1",
+            "default": "We do our best to get the boxes mailed out around the 25th of every month. For example, January's box will mail out around the 25th of January."
+        },
+        {
+            "type": "text",
+            "id": "maker_box_plans_answer2_part2",
+            "label": "Maker Box Plans Answer 2 Part 2",
+            "default": "Bi-monthly boxes ship out in February, April, June, August, October, and December."
+        },
+        {
+            "type": "text",
+            "id": "maker_box_plans_answer2_part3",
+            "label": "Maker Box Plans Answer 2 Part 3",
+            "default": "Our customers are always our number one priority, and we are here to provide them with a stress-free experience. Please feel free to contact us with any questions or concerns about the status of your box."
+        },
+        {
+            "type": "text",
+            "id": "maker_box_faq_final",
+            "label": "Maker Box FAQ Text to Page",
+            "default": "Have more questions not answered here?"
+            
+        },
+        {
+            "type": "text",
+            "id": "maker_box_faq_link",
+            "label": "Maker Box FAQ Link",
+            "default": "Head over to our FAQ page or reach out to us with any questions!"
+        }
+    ]
+}
+
+{% endschema %}

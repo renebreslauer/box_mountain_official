@@ -1,0 +1,60 @@
+<section class="pips-about">
+    <div class="pips_about_section">
+        <h1>{{section.settings.about_title}}</h1>
+        <div class="pips_about_group">
+            <div class="pips_about_step">
+                <img src="{{section.settings.about_image1 | img_url: '150x'}}" class="about_image">
+                <p class="about_image_caption">{{section.settings.about_caption1}}</p>
+            </div>
+            <div class="pips_about_step">
+                <img src="{{section.settings.about_image2 | img_url: '150x'}}" class="about_image">
+                <p class="about_image_caption">{{section.settings.about_caption2}}</p>
+            </div>
+            <div class="pips_about_step">
+                <img src="{{section.settings.about_image2 | img_url: '150x'}}" class="about_image">
+                <p class="about_image_caption">{{section.settings.about_caption2}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+"name": "Pips How It Works",
+"settings": [
+{ "type": "text",
+    "id": "about_title",
+    "label": "Pips About Title",
+    "default": "What People Say About Pips Mountain"
+},
+    { "type": "image_picker",
+    "id": "about_image1",
+    "label": "About Image 1"
+},
+{ "type": "text",
+    "id": "about_caption1",
+    "label": "About Caption 1",
+    "default": "'Look like 11/10 dice'"
+},
+{ "type": "image_picker",
+"id": "about_image2",
+"label": "About Image 2"
+},
+{ "type": "text",
+"id": "about_caption2",
+"label": "About Caption 2",
+"default": "'Opening new dice every day has certainly been the highlight of my mornings...'"
+},
+{ "type": "image_picker",
+"id": "about_image3",
+"label": "About Image 3"
+},
+{ "type": "text",
+"id": "about_caption3",
+"label": "About Caption 3",
+"default": "'My kids are loving the box of shiny math rocks!'"
+}
+]
+}
+
+{% endschema %}

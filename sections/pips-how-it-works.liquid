@@ -1,0 +1,66 @@
+<section class="pips-how-it-works">
+    <div class="pips_how_it_works_section">
+        <h1>{{section.settings.how_it_works_title}}</h1>
+        <div class="pips_how_it_works_group">
+            <div class="pips_how_it_works_step">
+                <img src="{{section.settings.how_it_works_image1 | img_url: '150x'}}" class="how_it_works_image">
+                <p class="how_it_works_image_caption">{{section.settings.how_it_works_caption1}}</p>
+            </div>
+            <div class="pips_how_it_works_step">
+                <img src="{{section.settings.how_it_works_image2 | img_url: '150x'}}" class="how_it_works_image">
+                <p class="how_it_works_image_caption">{{section.settings.how_it_works_caption2}}</p>
+            </div>
+            <div class="pips_how_it_works_step">
+                <img src="{{section.settings.how_it_works_image2 | img_url: '150x'}}" class="how_it_works_image">
+                <p class="how_it_works_image_caption">{{section.settings.how_it_works_caption2}}</p>
+            </div>
+        </div>
+    </div>
+    <button class="how_it_works_button">{{section.settings.how_it_works_button_text}}</button>
+</section>
+
+{% schema %}
+{
+"name": "Pips How It Works",
+"settings": [
+{ "type": "text",
+    "id": "how_it_works_title",
+    "label": "How It Works Title",
+    "default": "How It Works"
+},
+    { "type": "image_picker",
+    "id": "how_it_works_image1",
+    "label": "How It Works Image 1"
+},
+{ "type": "text",
+    "id": "how_it_works_caption1",
+    "label": "How It Works Caption 1",
+    "default": "1. Order your calendar box."
+},
+{ "type": "image_picker",
+"id": "how_it_works_image2",
+"label": "How It Works Image 2"
+},
+{ "type": "text",
+"id": "how_it_works_caption2",
+"label": "How It Works Caption 2",
+"default": "2. Your box gets delivered."
+},
+{ "type": "image_picker",
+"id": "how_it_works_image3",
+"label": "How It Works Image 3"
+},
+{ "type": "text",
+"id": "how_it_works_caption3",
+"label": "How It Works Caption 3",
+"default": "3. Yes, it's that simple."
+},
+{ "type": "text",
+"id": "how_it_works_button_text",
+"label": "How It Works Button Text",
+"default": "Get Started"
+}
+]
+}
+
+{% endschema %}
