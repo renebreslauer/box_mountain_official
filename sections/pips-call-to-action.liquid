@@ -1,0 +1,46 @@
+<section class="pips-call-to-action">
+    <div class="pips_call_to_action_wrapper">
+        <div class="pips_action_box">
+            <div class="pips_action_box_text">
+                <h2>{{section.settings.pips_action_box_title}}</h2>
+            </div>
+        <div class="pips_action_box_buttons">
+            <button class="pips_order_button">{{section.settings.pips_button_text1}}</button>
+            <button class="pips_order_more_button">{{section.settings.pips_button_text2}}</button>
+        </div>
+            </div>
+        </div>
+        <img src="{{section.settings.pip_icon | img_url: '100x'}}" class="pip_call_to_action_icon">
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "Pips Call to Action",
+    "settings": [
+        {
+            "type": "text",
+            "id": "pips_action_box_title",
+            "label": "Pips Call to Action Text",
+            "default": "If you love it, you can even sign up for a shipment every month at a discount!"
+        }, {
+            "type": "text",
+            "id": "pips_button_text1",
+            "label": "Pips Action Button Text 1",
+            "default": "Order a Box"
+        },
+        {
+            "type": "text",
+            "id": "pips_button_text2",
+            "label": "Pips Action Button Text 2",
+            "default": "Order More and Save"
+        },
+        {
+            "type": "image_picker",
+            "id": "pip_call_to_action_icon",
+            "label": "Pip Call-To-Action Icon"
+        }
+    ]
+}
+{% endschema %}

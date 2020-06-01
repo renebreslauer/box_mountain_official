@@ -834,7 +834,7 @@ a:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70vw;
+  width: 80vw;
   min-height: 50vh;
   position: relative;
   background: rgba(255, 255, 255, 0.7);
@@ -847,7 +847,7 @@ a:focus {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  width: 70vw;
+  width: 80vw;
   min-height: 30vh;
 
   text-align: center;
@@ -894,7 +894,8 @@ a:focus {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 70vw;
+  width: 80vw;
+  margin-bottom: 5rem;
 }
 
 .pip_info_grid_box {
@@ -909,7 +910,86 @@ a:focus {
   p {
     font-family: Almaq, sans-serif;
     color: black;
-    padding-left: 5%;
+    padding-left: 2%;
     font-weight: 300;
   }
+}
+
+// Pips Home Call to Action
+
+.pips-call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.pips_call_to_action_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+}
+
+.pips_call_to_action_wrapper:after {
+  background: rgba(7, 123, 0, 0.7);
+  content: '';
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-5deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.pips_action_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  height: 30vh;
+  width: 60vw;
+  text-align: center;
+  padding: 1rem 2rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  margin-top: 7%;
+
+  h2 {
+    color: #087b00;
+    letter-spacing: 0rem;
+    font-family: Almaq, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  button {
+    color: white;
+    border: none;
+    outline: none;
+    width: 12rem;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    font-family: Almaq, sans-serif;
+  }
+}
+
+.pip_call_to_action_icon {
+  right: 15%;
+  position: absolute;
+}
+
+.pips_order_button {
+  background-color: #899992;
+  margin-right: 0.5rem;
+}
+.pips_order_more_button {
+  background-color: #676666;
+  margin-left: 0.5rem;
 }
