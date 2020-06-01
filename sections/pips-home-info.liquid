@@ -1,0 +1,105 @@
+<section class="pip-home-info">
+    <div class="pip_info_title">
+        <h1>{{section.settings.pip_info_title}}</h1>
+    </div>
+    <div class="pip_info_grid">
+        <div class="pip_info_grid_box">
+            <img src="{{section.settings.pip_info_grid_box1 | img_url: '70x'}}" class="pip_info_gridbox">
+            <p>{{section.settings.pip_info_grid_text1}}</p>
+        </div>
+        <div class="pip_info_grid_box">
+            <img src="{{section.settings.pip_info_grid_box2 | img_url: '70x'}}" class="pip_info_gridbox">
+            <p>{{section.settings.pip_info_grid_text2}}</p>
+        </div>
+        <div class="pip_info_grid_box">
+            <img src="{{section.settings.pip_info_grid_box3 | img_url: '70x'}}" class="pip_info_gridbox">
+            <p>{{section.settings.pip_info_grid_text3}}</p>
+        </div>
+        <div class="pip_info_grid_box">
+            <img src="{{section.settings.pip_info_grid_box4 | img_url: '70x'}}" class="pip_info_gridbox">
+            <p>{{section.settings.pip_info_grid_text4}}</p>
+        </div>
+        <div class="pip_info_grid_box">
+            <img src="{{section.settings.pip_info_grid_box5 | img_url: '70x'}}" class="pip_info_gridbox">
+            <p>{{section.settings.pip_info_grid_text5}}</p>
+        </div>
+        <div class="pip_info_grid_box">
+            <img src="{{section.settings.pip_info_grid_box6 | img_url: '70x'}}" class="pip_info_gridbox">
+            <p>{{section.settings.pip_info_grid_text6}}</p>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "Pips Mountain Hero",
+    "settings": [
+    { "type": "text",
+        "id": "pip_info_title",
+        "label": "Pip Info Section Title",
+        "default": "What'Inside the Box"
+    },
+        { "type": "image_picker",
+        "id": "pip_info_grid_box1",
+        "label": "Pip Info Grid Box Image 1"
+    },
+        {
+            "type": "text",
+            "id": "pip_info_grid_text1",
+            "label": "Pip Info Grid Box Text 1",
+            "default": "You will receive a box containing 30 sealed pouches, each one numbered for the day and containing a single mystery die"
+        },
+        { "type": "image_picker",
+        "id": "pip_info_grid_box2",
+        "label": "Pip Info Grid Box Image 2"
+    },
+        {
+            "type": "text",
+            "id": "pip_info_grid_text2",
+            "label": "Pip Info Grid Box Text 2",
+            "default": "Guaranteed one (1) matching seven-piece poly set in each box!"
+        },
+        { "type": "image_picker",
+        "id": "pip_info_grid_box3",
+        "label": "Pip Info Grid Box Image 3"
+    },
+        {
+            "type": "text",
+            "id": "pip_info_grid_text3",
+            "label": "Pip Info Grid Box Text 3",
+            "default": "The other 23 will be randomly selected cool dice of random sideness"
+        },
+        { "type": "image_picker",
+        "id": "pip_info_grid_box4",
+        "label": "Pip Info Grid Box Image 4"
+    },
+        {
+            "type": "text",
+            "id": "pip_info_grid_text4",
+            "label": "Pip Info Grid Box Text 4",
+            "default": "No boring, standard colored opaques"
+        },
+        { "type": "image_picker",
+        "id": "pip_info_grid_box5",
+        "label": "Pip Info Grid Box Image 5"
+    },
+        {
+            "type": "text",
+            "id": "pip_info_grid_text5",
+            "label": "Pip Info Grid Box Text 5",
+            "default": "A true random selection of all different sided dice (not just a bunch of 6s)"
+        },
+        { "type": "image_picker",
+        "id": "pip_info_grid_box6",
+        "label": "Pip Info Grid Box Image 6"
+    },
+        {
+            "type": "text",
+            "id": "pip_info_grid_text6",
+            "label": "Pip Info Grid Box Text 6",
+            "default": "No factory seconds"
+        }
+        ]
+    }
+{% endschema %}

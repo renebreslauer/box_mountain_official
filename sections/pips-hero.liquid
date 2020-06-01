@@ -1,10 +1,14 @@
 <section class="pips_hero">
-        <img class="pips_hero_image" src="{{section.settings.pips_hero_image | img_url: '950x' }}">
-       
-        <div class="pips_hero_title">{{section.settings.pips_hero_title}}</div>
-        <div class="pips_hero_subtitle">{{section.settings.pips_hero_subtitle}}</div>
-        <a href="{{section.settings.pips_hero_link}}"><button class="pips_hero_button">{{section.settings.pips_hero_button_text}}</button></a>
-   
+    <img class="pips_hero_image" src="{{section.settings.pips_hero_image | img_url: '950x' }}">
+    <div class="pips_hero_text">
+        <div class="pips_hero_text_wrapper">
+            <div class="pips_hero_title">{{section.settings.pips_hero_title}}</div>
+            <div class="pips_hero_subtitle">{{section.settings.pips_hero_subtitle}}</div>
+            <a href="{{section.settings.pips_hero_link}}">
+                <button class="pips_hero_button">{{section.settings.pips_hero_button_text}}</button>
+            </a>
+        </div>
+    </div>
 </section>
 
 {% schema %}
