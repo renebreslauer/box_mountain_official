@@ -1,0 +1,32 @@
+<section class="pips-nav">
+    <div class="pips-nav-wrapper">
+        <div>
+            <a href="{{section.settings.pips_nav_logo_link}}"><img class="pips-nav-logo" src="{{section.settings.pips_nav_logo | img_url: '100x'}}"></a>
+        </div>
+        <div>
+            <a class="pips-nav-link" href="#">What's Inside</a>
+            <a class="pips-nav-link" href="#">Shop</a>
+            <a class="pips-nav-link" href="#">About Us</a>
+            <a class="pips-nav-link" href="#">Mailing List</a>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Pips Nav",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "pips_nav_logo",
+            "label": "Pips Nav Logo"
+        },
+        {
+            "type": "url",
+            "id": "pips_nav_logo_link",
+            "label": "Pips Nav Logo Link"
+        }
+    ]
+}
+
+{% endschema %}

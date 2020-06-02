@@ -1,0 +1,33 @@
+<section class="maker-box-review">
+    <div class="maker_box_review_container">
+        <img src="{{section.settings.maker_box_review_img | img_url: '45x'}}" class="maker_box_review_image">
+        <h2>{{section.settings.maker_box_review_text}}</h2>
+        <h2>{{section.settings.maker_box_review_author}}</h2>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Maker Box Review",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "maker_box_review_img",
+            "label": "Maker Box Review Image"
+        },
+        {
+            "type": "text",
+            "id": "maker_box_review_text",
+            "label": "Maker Box Review Text",
+            "default": "Maker Box is awesome! Have always been wanting to try a bunch of different exotic filaments and Maker Box makes it both practical and affordable."
+        },
+        {
+            "type": "text",
+            "id": "maker_box_review_author",
+            "label": "Maker Box Review Author",
+            "default": "Ryan Loughry"
+        }
+        ]
+    }
+
+{% endschema %}
