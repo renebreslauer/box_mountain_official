@@ -1,31 +1,37 @@
 <section class="cryptid-crate-plans">
 <h1 class="cryptid_crate_plans_title">{{section.settings.cryptid_crate_plans_title}}<h1>
-<h2 class="cryptic_crate_plans_subtitle">{{section.settings.cryptid_crate_plans_subtitle}}</h2>
+<h2 class="cryptid_crate_plans_subtitle">{{section.settings.cryptid_crate_plans_subtitle}}</h2>
 <div class="cryptid_crate_plans_grid">
     <div class="cryptid_crate_plans_item">
-    <h2>{{section.settings.cryptid_title1}}</h2>
-    <img src="{{section.settings.cryptid_plan_image1}}" class="cryptid plan image">
-    <p>{{section.settings.cryptid_plan_description1}}</p>
-    <h3>{{section.settings.cryptid_plan_price1}}</h3>
-    <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button1}}</button>
+        <h2>{{section.settings.cryptid_title1}}</h2>
+        <img src="{{section.settings.cryptid_plan_image1 | img_url: '200x'}}" class="cryptid_plan_image">
+        
+             <p>{{section.settings.cryptid_plan_description1}}</p>
+        <div class="cryptid_plans_item_text">
+            <h3>{{section.settings.cryptid_plan_price1}}</h3>
+             <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button1}}</button>
+        </div>
     </div>
     <div class="cryptid_crate_plans_item">
         <h2>{{section.settings.cryptid_title2}}</h2>
-        <img src="{{section.settings.cryptid_plan_image2}}" class="cryptid plan image">
-    <p>{{section.settings.cryptid_plan_description2}}</p>
-    <h3>{{section.settings.cryptid_plan_price2}}</h3>
-    <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button2}}</button>
-
+        <img src="{{section.settings.cryptid_plan_image2 | img_url: '200x'}}" class="cryptid_plan_image">
+        
+            <p>{{section.settings.cryptid_plan_description2}}</p>
+            <div class="cryptid_plans_item_text">
+            <h3>{{section.settings.cryptid_plan_price2}}</h3>
+            <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button2}}</button>
+        </div>
     </div>
     <div class="cryptid_crate_plans_item">
-    <h2>{{section.settings.cryptid_title3}}</h2>
-        <img src="{{section.settings.cryptid_plan_image3}}" class="cryptid plan image">
-    <p>{{section.settings.cryptid_plan_description3}}</p>
-    <h3>{{section.settings.cryptid_plan_price3}}</h3>
-    <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button3}}</button>
-
+        <h2>{{section.settings.cryptid_title3}}</h2>
+        <img src="{{section.settings.cryptid_plan_image3 | img_url: '200x'}}" class="cryptid_plan_image">
+            <p>{{section.settings.cryptid_plan_description3}}</p>
+            <div class="cryptid_plans_item_text">
+            <h3>{{section.settings.cryptid_plan_price3}}</h3>
+         <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button3}}</button>
+        </div>
     </div>
-    </div>
+</div>
 </section>
 
 {% schema %}
@@ -129,7 +135,7 @@
         {
             "type": "text",
             "id": "cryptid_plan_button3",
-            "label": "cryptid_plan_button3"
+            "label": "cryptid_plan_button3",
             "default": "Choose"
         }
     ]

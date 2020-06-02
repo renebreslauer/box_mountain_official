@@ -1204,6 +1204,7 @@ a:focus {
     padding: 15px 30px;
     width: 15rem;
     font-weight: 600;
+    margin-bottom: 0.5rem;
     &:hover {
       background-color: rgb(0, 204, 255);
     }
@@ -1236,12 +1237,77 @@ a:focus {
   width: 100vw;
 }
 
-.cryptic_crate_plans_subtitle {
+.cryptid_crate_plans_title {
+  color: #f7f784;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.2rem;
+}
+
+.cryptid_crate_plans_subtitle {
   width: 1200px;
   text-align: center;
+  letter-spacing: 0.1rem;
+  color: #cfad66;
+  font-weight: 300;
+  line-height: 1.7rem;
+  padding: 10px;
 }
 .cryptid_crate_plans_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 1200px;
+}
+.cryptid_crate_plans_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e4ea7b;
+  padding: 1rem;
+  margin: 2rem;
+  color: #cfad66;
+  text-align: center;
+  position: relative;
+  h2 {
+    font-family: 'Bangers', cursive;
+    color: #cfad66;
+    text-align: center;
+    height: 3rem;
+  }
+  p {
+    color: #cfad66;
+    vertical-align: baseline;
+    height: 290px;
+    font-size: 17px;
+  }
+}
+.cryptid_plans_item_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 2rem;
+  button {
+    border-radius: 20px;
+    background-color: #f7f785;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-family: 'Bangers', cursive;
+    color: #172200;
+    letter-spacing: 0.1rem;
+    &:hover {
+      background-color: #d7bee4;
+    }
+  }
+  h3 {
+    color: #333333;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.1rem;
+  }
+}
+.cryptid_plan_image {
+  margin-bottom: 1.5rem;
 }
