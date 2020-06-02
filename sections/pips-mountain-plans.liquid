@@ -7,16 +7,43 @@
             <h1>{{section.settings.pips_item_price1}}</h1>
             <p>{{section.settings.pips_item_description1}}</p>
             <button>{{section.settings.pips_option1}}</button>
-
         </div>
         <div class="pips_item">
             <h2>{{section.settings.pips_item_title2}}</h2>
             <h1>{{section.settings.pips_item_price2}}</h1>
             <p>{{section.settings.pips_item_description2}}</p>
-            <button>{{section.settings.pips_item2_option2}}</button>
+            <button>{{section.settings.pips_option2}}</button>
         </div>
     </div>
     <h2>{{section.settings.pips_multiplan_subtitle}}</h2>
+    <h3>{{section.settings.pips_multiplan_description}}</h3>
+    <div class="pips_multiplans_grid">
+        <div class="pips_item">
+            <h2>{{section.settings.pips_item_title3}}</h2>
+            <h3>{{section.settings.pips_item_price31}}</h1>
+            <p>{{section.settings.pips_item_description3}}</p>
+            <button>{{section.settings.pips_option3}}</button>
+
+        </div>
+        <div class="pips_item">
+            <h2>{{section.settings.pips_item_title4}}</h2>
+            <h1>{{section.settings.pips_item_price4}}</h1>
+            <p>{{section.settings.pips_item_description4}}</p>
+            <button>{{section.settings.pips_item2_option4}}</button>
+        </div>
+        <div class="pips_item">
+            <h2>{{section.settings.pips_item_title5}}</h2>
+            <h1>{{section.settings.pips_item_price5}}</h1>
+            <p>{{section.settings.pips_item_description5}}</p>
+            <button>{{section.settings.pips_option5}}</button>
+        </div>
+        <div class="pips_item">
+            <h2>{{section.settings.pips_item_title6}}</h2>
+            <h1>{{section.settings.pips_item_price6}}</h1>
+            <p>{{section.settings.pips_item_description6}}</p>
+            <button>{{section.settings.pips_option6}}</button>
+        </div>
+    </div>
 </section>
 
 {% schema %}
@@ -31,7 +58,7 @@
             "default": "Choose Your Plan"
         },
         { "type": "text",
-     "id": "pips_plans_subtitle",
+        "id": "pips_plans_subtitle",
         "label": "Pips Plans Subtitle",
         "default": "Single Purchases"
 }, {
@@ -43,32 +70,32 @@
             "type": "text",
             "id": "pips_item_price1",
             "label": "Pips Item Price 1",
-            "default": "$15.99/mo"
+            "default": "$39.99"
         }, {
             "type": "text",
             "id": "pips_item_description1",
             "label": "Pips Item Description 1",
-            "default": "The 4 monthly samples will be 4 different colors from a single manufacturer. The material will be PLA or something that prints at typical PLA settings. No special nozzles, enclosure, or heated bed. This is the plan to pick if you don't want to try challenging materials and your goal is building a library of color choices."
+            "default": "A single month of our popular Pips Calendar box! No subscription attached. This is a great choice if you want to try to box without committing to a multi month subscription."
         }, {
             "type": "text",
             "id": "pips_option1",
             "label": "Pips Item 1 Button 1",
-            "default": "Monthly Delivery"
+            "default": "Choose"
         },  {
             "type": "text",
             "id": "pips_item_title2",
             "label": "Pips Item Title 2",
-            "default": "Pips Easy"
+            "default": "Mystery Dice Set with Bag"
         }, {
             "type": "text",
             "id": "pips_item_price2",
             "label": "Pips Item Price 2",
-            "default": "$15.99/mo"
+            "default": "$7.99"
         }, {
             "type": "text",
             "id": "pips_item_description2",
             "label": "Pips Item Description 2",
-            "default": "The 4 monthly samples will be 4 different colors from a single manufacturer. The material will be PLA or something that prints at typical PLA settings. No special nozzles, enclosure, or heated bed. This is the plan to pick if you don't want to try challenging materials and your goal is building a library of color choices."
+            "default": "One mystery complete 7 piece set and bag. Add a mystery Grab Bag to your calendar!"
         }, {
             "type": "text",
             "id": "pips__option2",
@@ -79,6 +106,77 @@
             "id": "pips_multiplan_subtitle",
             "label": "Pips Multimonth Subtitle",
             "default": "Save More with Multimonth!"
+        },
+        {
+            "type": "text",
+            "id": "pips_multiplan_description",
+            "label": "Pips Multiplan Description",
+            "default": "Prepay for 3 months or more and get a discount! Each month you will receive a mystery box containing 30 individually bagged and numbered dice. Boxes ship around the 25th of each month. Free shipping in the US!"
+        },
+        {
+            "type": "text",
+            "id": "pips_item_title3",
+            "label": "Pips Item Title 3",
+            "default": "Month to Month"
+        }, {
+            "type": "text",
+            "id": "pips_item_price3",
+            "label": "Pips Item Price 3",
+            "default": "$39.99"
+        }, {
+            "type": "text",
+            "id": "pips_item_description3",
+            "label": "Pips Item Description 3",
+            "default": "Bundle and save."
+        }, {
+            "type": "text",
+            "id": "pips__option3",
+            "label": "Pips Button 1",
+            "default": "Choose"
+        },
+
+
+        {
+            "type": "text",
+            "id": "pips_item_title4",
+            "label": "Pips Item Title 4",
+            "default": "3 Month Prepay"
+        }, {
+            "type": "text",
+            "id": "pips_item_price4",
+            "label": "Pips Item Price 4",
+            "default": "$105.00"
+        }, {
+            "type": "text",
+            "id": "pips_item_description4",
+            "label": "Pips Item Description 4",
+            "default": "Bundle more and save more."
+        }, {
+            "type": "text",
+            "id": "pips__option4",
+            "label": "Pips Button 4",
+            "default": "Choose"
+        },
+        {
+            "type": "text",
+            "id": "pips_item_title5",
+            "label": "Pips Item Title 5",
+            "default": "6 Month Prepay"
+        }, {
+            "type": "text",
+            "id": "pips_item_price5",
+            "label": "Pips Item Price 5",
+            "default": "$105.00"
+        }, {
+            "type": "text",
+            "id": "pips_item_description5",
+            "label": "Pips Item Description 5",
+            "default": "Bundle more and save more."
+        }, {
+            "type": "text",
+            "id": "pips__option5",
+            "label": "Pips Button 5",
+            "default": "Choose"
         }
         ]
     }

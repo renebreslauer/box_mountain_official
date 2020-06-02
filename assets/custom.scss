@@ -1311,3 +1311,29 @@ a:focus {
 .cryptid_plan_image {
   margin-bottom: 1.5rem;
 }
+
+// Pips Plans
+.pips-plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  text-align: center;
+}
+.pips_plans_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1200px;
+  text-align: center;
+}
+.pips_multiplans_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1200px;
+}
+.pips_item {
+  width: 300px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
