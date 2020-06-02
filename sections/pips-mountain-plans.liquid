@@ -1,0 +1,74 @@
+<section class="pips-plans">
+    <h1>{{section.settings.pips_plans_title}}</h1>
+    <div class="pips_plans_grid">
+        <div class="pips_item">
+            <h2>{{section.settings.pips_item_title1}}</h2>
+            <h1>{{section.settings.pips_item_price1}}</h1>
+            <p>{{section.settings.pips_item_description1}}</p>
+            <button>{{section.settings.pips_option1}}</button>
+
+        </div>
+        <div class="pips_item">
+            <h2>{{section.settings.pips_item_title2}}</h2>
+            <h1>{{section.settings.pips_item_price2}}</h1>
+            <p>{{section.settings.pips_item_description2}}</p>
+            <button>{{section.settings.pips_item2_option2}}</button>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "Pips Plans",
+    "settings": [
+        {
+            "type": "text",
+            "id": "pips_plans_title",
+            "label": "Pips Plans Title",
+            "default": "Choose Your Plan"
+        }, {
+            "type": "text",
+            "id": "pips_item_title1",
+            "label": "Pips Item Title 1",
+            "default": "Pips Calendar Box - Single Month"
+        }, {
+            "type": "text",
+            "id": "pips_item_price1",
+            "label": "Pips Item Price 1",
+            "default": "$15.99/mo"
+        }, {
+            "type": "text",
+            "id": "pips_item_description1",
+            "label": "Pips Item Description 1",
+            "default": "The 4 monthly samples will be 4 different colors from a single manufacturer. The material will be PLA or something that prints at typical PLA settings. No special nozzles, enclosure, or heated bed. This is the plan to pick if you don't want to try challenging materials and your goal is building a library of color choices."
+        }, {
+            "type": "text",
+            "id": "pips_option1",
+            "label": "Pips Item 1 Button 1",
+            "default": "Monthly Delivery"
+        },  {
+            "type": "text",
+            "id": "pips_item_title2",
+            "label": "Pips Item Title 2",
+            "default": "Pips Easy"
+        }, {
+            "type": "text",
+            "id": "pips_item_price2",
+            "label": "Pips Item Price 2",
+            "default": "$15.99/mo"
+        }, {
+            "type": "text",
+            "id": "pips_item_description2",
+            "label": "Pips Item Description 2",
+            "default": "The 4 monthly samples will be 4 different colors from a single manufacturer. The material will be PLA or something that prints at typical PLA settings. No special nozzles, enclosure, or heated bed. This is the plan to pick if you don't want to try challenging materials and your goal is building a library of color choices."
+        }, {
+            "type": "text",
+            "id": "pips__option2",
+            "label": "Pips Item 2 Button 1",
+            "default": "Monthly Delivery"
+        }
+        ]
+    }
+
+{% endschema %}
