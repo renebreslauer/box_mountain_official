@@ -741,17 +741,16 @@ a:focus {
   display: flex;
   justify-content: center;
   width: 100vw;
-  padding: 8px 0px;
   background-color: #151618;
   border-bottom: 5px solid #0073ff;
   height: 6rem;
 }
 
 .maker-box-nav-wrapper {
-  width: 1200px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  width: 1200px;
 
   a {
     color: white;
@@ -767,7 +766,7 @@ a:focus {
 }
 
 .maker-box-nav-link {
-  padding: 0px 30px;
+  padding-left: 5rem;
 }
 
 // Cryptid Crate Nav
@@ -776,7 +775,7 @@ a:focus {
   display: flex;
   justify-content: center;
   width: 100vw;
-  padding: 8px 16px;
+  padding: 8px;
   background-color: #152100;
   height: 6rem;
 }
@@ -784,7 +783,7 @@ a:focus {
 .cryptid-box-nav-wrapper {
   width: 1200px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 
   a {
@@ -800,7 +799,7 @@ a:focus {
 }
 
 .cryptid-box-nav-link {
-  padding: 0px 15px;
+  padding-left: 5rem;
 }
 
 .cryptid-box-nav-logo {
@@ -1325,15 +1324,35 @@ a:focus {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 1200px;
-  text-align: center;
+  justify-items: center;
+  align-items: center;
 }
 .pips_multiplans_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 1200px;
+  justify-items: center;
+  align-items: center;
 }
 .pips_item {
-  width: 300px;
+  width: 20rem;
+  height: 25rem;
   text-align: center;
   background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.pips_item_footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+  button {
+    transform: translate(-50%, -50%);
+  }
 }
