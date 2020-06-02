@@ -1,0 +1,135 @@
+<section class="cryptid-crate-plans">
+<h1 class="cryptid_crate_plans_title">{{section.settings.cryptid_crate_plans_title}}<h1>
+<h2 class="cryptic_crate_plans_subtitle">{{section.settings.cryptid_crate_plans_subtitle}}</h2>
+<div class="cryptid_crate_plans_grid">
+    <div class="cryptid_crate_plans_item">
+    <h2>{{section.settings.cryptid_title1}}</h2>
+    <img src="{{section.settings.cryptid_plan_image1}}" class="cryptid plan image">
+    <p>{{section.settings.cryptid_plan_description1}}</p>
+    <h3>{{section.settings.cryptid_plan_price1}}</h3>
+    <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button1}}</button>
+    </div>
+    <div class="cryptid_crate_plans_item">
+        <h2>{{section.settings.cryptid_title2}}</h2>
+        <img src="{{section.settings.cryptid_plan_image2}}" class="cryptid plan image">
+    <p>{{section.settings.cryptid_plan_description2}}</p>
+    <h3>{{section.settings.cryptid_plan_price2}}</h3>
+    <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button2}}</button>
+
+    </div>
+    <div class="cryptid_crate_plans_item">
+    <h2>{{section.settings.cryptid_title3}}</h2>
+        <img src="{{section.settings.cryptid_plan_image3}}" class="cryptid plan image">
+    <p>{{section.settings.cryptid_plan_description3}}</p>
+    <h3>{{section.settings.cryptid_plan_price3}}</h3>
+    <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button3}}</button>
+
+    </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "Cryptid Plans",
+    "settings": [
+        {
+            "type": "text",
+            "id": "cryptid_crate_plans_title",
+            "label": "Cryptid Crate Plans Title",
+            "default": "Choose Your Plan"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_crate_plans_subtitle",
+            "label": "Cryptid Crate Plans Subtitle",
+            "default": "Cryptid Crate is the first and only subscription box for cryptozoology fans. Once a month subscribers will enjoy a crate containing an array of cryptozoology and paranormal themed items worth more than the cost of the box, such as apparel, home decor, collectibles, and media, delivered to your door. Shipping is always free to our customers."
+        },
+  
+           {
+            "type": "text",
+            "id": "cryptid_title1",
+            "label": "Cryptid Plans Title 1",
+            "default": "Cryptid Crate Lite"
+        },
+            {
+            "type": "image_picker",
+            "id": "cryptid_plan_image1",
+            "label": "Cryptid Plan Image 1"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_plan_description1",
+            "label": "Cryptid Plan Description 1",
+            "default": "Cryptid Crate Lite is a smaller version of our original product. All orders will ship within the calendar month when you place the order. Cryptid Crate Lite will ship two weeks after the full sized Cryptid Crate and will feature items from prior months."
+        },
+          {
+            "type": "text",
+            "id": "cryptid_plan_price1",
+            "label": "Cryptid Plan Price 1",
+            "default": "$19.99"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_plan_button1",
+            "label": "cryptid_plan_button1"
+        },
+         {
+            "type": "text",
+            "id": "cryptid_title2",
+            "label": "Cryptid Plans Title 2",
+            "default": "Cryptid Crate The Original"
+        },
+            {
+            "type": "image_picker",
+            "id": "cryptid_plan_image2",
+            "label": "Cryptid Plan Image 2"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_plan_description2",
+            "label": "Cryptid Plan Description 2",
+            "default": "Cryptid Crates ship on the 1st of each month. All orders ship on the first weekday of the month after the order is placed (ex. if you subscribe on June 13th, your first create will ship June 1st)."
+        },
+          {
+            "type": "text",
+            "id": "cryptid_plan_price2",
+            "label": "Cryptid Plan Price 2",
+            "default": "$39.99"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_plan_button2",
+            "label": "cryptid_plan_button2"
+        },
+           {
+            "type": "text",
+            "id": "cryptid_title3",
+            "label": "Cryptid Plans Title 3",
+            "default": "Cryptid Crate The Original - In Larger Sizes"
+        },
+            {
+            "type": "image_picker",
+            "id": "cryptid_plan_image3",
+            "label": "Cryptid Plan Image 3"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_plan_description3",
+            "label": "Cryptid Plan Description 3",
+            "default": "Cryptid Crates ship on the 1st of each month. All orders ship on the first weekday of the month after the order is placed (ex. if you subscribe on June 13th, your first create will ship June 1st)."
+        },
+          {
+            "type": "text",
+            "id": "cryptid_plan_price3",
+            "label": "Cryptid Plan Price 3",
+            "default": "$43.99"
+        },
+        {
+            "type": "text",
+            "id": "cryptid_plan_button3",
+            "label": "cryptid_plan_button3"
+        }
+    ]
+}
+
+{% endschema %}

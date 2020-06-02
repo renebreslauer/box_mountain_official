@@ -1225,3 +1225,24 @@ a:focus {
   text-align: center;
   width: 1200px;
 }
+
+// Cryptid Crate Plans Section
+
+.cryptid-crate-plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.cryptid_crate_plans_title {
+}
+.cryptid_crate_plans_subtitle {
+  width: 1200px;
+}
+.cryptid_crate_plans_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+}
