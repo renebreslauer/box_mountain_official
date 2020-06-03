@@ -463,6 +463,9 @@ a:focus {
     border: none;
     position: absolute;
     left: 0;
+    &:hover {
+      background-color: #00ccff;
+    }
   }
 }
 
@@ -581,6 +584,8 @@ a:focus {
   p {
     margin-bottom: 3rem;
     color: #f8f0ab;
+    font-family: paralucent, sans-serif;
+    font-weight: 400;
   }
   h1 {
     color: #f8f0ab;
@@ -633,6 +638,8 @@ a:focus {
   p {
     color: #f8f0ab;
     font-size: 15px;
+    font-family: paralucent, sans-serif;
+    font-weight: 400;
   }
   h3 {
     font-family: 'Bangers', cursive;
@@ -670,7 +677,8 @@ a:focus {
   align-items: center;
   p {
     color: #f8f0ab;
-    font-family: 'Bangers', cursive;
+    font-family: paralucent, sans-serif;
+    font-weight: 400;
     font-size: 16px;
     padding: 1rem 2rem;
   }
@@ -683,7 +691,8 @@ a:focus {
     margin-top: 7rem;
   }
   p {
-    font-family: 'Bangers', cursive;
+    font-family: paralucent, sans-serif;
+    font-weight: 400;
     color: #f8f0ab;
     font-size: 18px;
     max-width: 1040px;
@@ -697,7 +706,7 @@ a:focus {
   }
 }
 
-//FAQ
+//CRYPTID FAQ
 
 .cryptid_faq {
   display: flex;
@@ -725,7 +734,8 @@ a:focus {
     margin: 0 0 15px;
   }
   p {
-    font-family: 'Bangers', cursive;
+    font-family: paralucent, sans-serif;
+    font-weight: 400;
     font-size: 14px;
     color: #f8f0ab;
     letter-spacing: 0.077em;
@@ -1016,6 +1026,8 @@ a:focus {
 .pip_call_to_action_icon {
   right: 15%;
   position: absolute;
+  z-index: 10;
+  margin-top: 5rem;
 }
 
 .pips_order_button {
@@ -1305,9 +1317,10 @@ a:focus {
 
 .cryptid_crate_plans_subtitle {
   width: 1200px;
+  font-family: paralucent, sans-serif;
+  font-weight: 400;
   text-align: center;
-  letter-spacing: 0.1rem;
-  color: #cfad66;
+  color: white;
   font-weight: 300;
   line-height: 1.7rem;
   padding: 10px;
@@ -1332,12 +1345,15 @@ a:focus {
     color: #cfad66;
     text-align: center;
     height: 3rem;
+    letter-spacing: 0.1em;
   }
   p {
     color: #cfad66;
     vertical-align: baseline;
     height: 290px;
     font-size: 17px;
+    font-family: paralucent, sans-serif;
+    font-weight: 400;
   }
 }
 .cryptid_plans_item_text {
@@ -1363,7 +1379,7 @@ a:focus {
     }
   }
   h3 {
-    color: #333333;
+    color: white;
     font-family: 'Bangers', cursive;
     letter-spacing: 0.1rem;
   }

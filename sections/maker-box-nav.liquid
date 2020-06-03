@@ -1,13 +1,13 @@
 <section class="maker-box-nav">
     <div class="maker-box-nav-wrapper">
-    <div>
-        <a href="{{section.settings.maker_box_nav_logo_link}}"><img class="maker-box-nav-logo" src="{{section.settings.maker_box_nav_logo | img_url: '150x'}}"></a>
-</div>
-<div>
-        <a class="maker-box-nav-link" href="#">Plans</a>
-        <a class="maker-box-nav-link" href="#">FAQ</a>
-        <a class="maker-box-nav-link" href="#">About</a>
-        <a class="maker-box-nav-link" href="#">Filaments</a>
+        <div>
+            <a href="{{section.settings.maker_box_nav_logo_link}}"><img class="maker-box-nav-logo" src="{{section.settings.maker_box_nav_logo | img_url: '150x'}}"></a>
+        </div>
+        <div>
+            <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link1}}">Plans</a>
+            <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link2}}">FAQ</a>
+            <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link3}}">About</a>
+            <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link4}}">Filaments</a>
         </div>
     </div>
 </section>
@@ -25,6 +25,23 @@
             "type": "url",
             "id": "maker_box_nav_logo_link",
             "label": "Maker Box Nav Logo Link"
+        },
+        {
+            "type": "url",
+            "id": "maker_nav_link1",
+            "label": "Maker Nav Link 1"
+        },    {
+            "type": "url",
+            "id": "maker_nav_link2",
+            "label": "Maker Nav Link 2"
+        },    {
+            "type": "url",
+            "id": "maker_nav_link3",
+            "label": "Maker Nav Link 3"
+        },    {
+            "type": "url",
+            "id": "maker_nav_link4",
+            "label": "Maker Nav Link 4"
         }
     ]
 }

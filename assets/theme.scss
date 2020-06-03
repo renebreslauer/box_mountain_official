@@ -1664,7 +1664,6 @@ h1 {
 h2 {
   font-size: em(floor($font-size-header * 0.78));
   text-transform: uppercase;
-  letter-spacing: 0.1em;
 
   @include media-query($small) {
     font-size: em(floor(($font-size-header * 0.78) * 0.9));
@@ -4071,7 +4070,12 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
 // sass-lint:disable class-name-format
 .zoomImg {
-  background-color: $color-body;
+  background-color: none;
+  outline: none;
+  &:active {
+    outline: none;
+    border: none;
+  }
 }
 
 @include media-query($small) {

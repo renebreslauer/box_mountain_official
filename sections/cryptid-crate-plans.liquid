@@ -9,7 +9,7 @@
              <p>{{section.settings.cryptid_plan_description1}}</p>
         <div class="cryptid_plans_item_text">
             <h3>{{section.settings.cryptid_plan_price1}}</h3>
-             <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button1}}</button>
+            <a href="{{section.settings.cryptid_product1}}"><button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button1}}</button></a>
         </div>
     </div>
     <div class="cryptid_crate_plans_item">
@@ -19,7 +19,7 @@
             <p>{{section.settings.cryptid_plan_description2}}</p>
             <div class="cryptid_plans_item_text">
             <h3>{{section.settings.cryptid_plan_price2}}</h3>
-            <button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button2}}</button>
+            <a href="{{section.settings.cryptid_product2}}"><button class="cryptid_crate_plan_button">{{section.settings.cryptid_plan_button2}}</button></a>
         </div>
     </div>
     <div class="cryptid_crate_plans_item">
@@ -137,6 +137,15 @@
             "id": "cryptid_plan_button3",
             "label": "cryptid_plan_button3",
             "default": "Choose"
+        },{
+            "type": "url",
+            "id":"cryptid_product1",
+            "label": "Cryptid Product 1"
+        },
+        {
+            "type": "url",
+            "id":"cryptid_product2",
+            "label": "Cryptid Product 2"
         }
     ]
 }

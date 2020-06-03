@@ -7,7 +7,11 @@
             <h1>{{section.settings.pips_item_price1}}</h1>
             <p>{{section.settings.pips_item_description1}}</p>
             <div class="pips_item_footer">
-                <button>{{section.settings.pips_option1}}</button>
+            <a href="{{section.settings.pips_product1}}">
+                <button>
+                    {{section.settings.pips_option1}}
+                </button>
+            </a>
             </div>
         </div>
         <div class="pips_item">
@@ -114,6 +118,11 @@
             "id": "pips_option2",
             "label": "Pips Button 1",
             "default": "Choose"
+        },
+        {
+            "type": "url",
+            "id": "pips_product_link2",
+            "label": "Pips Product Link 2"
         },{
             "type": "text",
             "id": "pips_multiplan_subtitle",
@@ -209,6 +218,11 @@
             "id": "pips_option6",
             "label": "Pips Button 6",
             "default": "Choose"
+        }, {
+            "type": "url",
+            "id": "pips_product1",
+            "label": "Pips Product 1 Link"
+        
         }
         ]
     }

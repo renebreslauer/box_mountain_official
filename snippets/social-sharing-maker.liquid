@@ -1,0 +1,49 @@
+<style>
+    .btn--share {
+        border: 1px solid #585858;
+    }
+    .btn--share:hover {
+        border: 1px solid #17181a;
+    }
+    .share-title {
+        color: #585858;
+    }
+    .btn--share:hover .share-title{
+        color: #17181a;
+    }
+</style>
+
+<!-- /snippets/social-sharing.liquid -->
+<ul class="social-sharing">
+
+    {% if settings.share_facebook %}
+        <li>
+            <a class="btn btn--small btn--share share-facebook" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}" target="_blank">
+                {% include 'icon-facebook' %}
+                <span aria-hidden="true" class="share-title">{{ 'general.social.share_on_facebook' | t }}</span>
+                <span class="visually-hidden">{{ 'general.social.alt_text.share_on_facebook' | t }}</span>
+            </a>
+        </li>
+    {% endif %}
+
+    {% if settings.share_twitter %}
+        <li>
+            <a class="btn btn--small btn--share share-twitter" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}" target="_blank">
+                {% include 'icon-twitter' %}
+                <span aria-hidden="true" class="share-title">{{ 'general.social.share_on_twitter' | t }}</span>
+                <span class="visually-hidden">{{ 'general.social.alt_text.share_on_twitter' | t }}</span>
+            </a>
+        </li>
+    {% endif %}
+
+    {% if settings.share_pinterest %}
+        <li>
+            <a class="btn btn--small btn--share share-pinterest" href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}" target="_blank">
+                {% include 'icon-pinterest' %}
+                <span aria-hidden="true" class="share-title">{{ 'general.social.share_on_pinterest' | t }}</span>
+                <span class="visually-hidden">{{ 'general.social.alt_text.share_on_pinterest' | t }}</span>
+            </a>
+        </li>
+    {% endif %}
+
+</ul> 
