@@ -71,7 +71,7 @@ h6,
   margin: 0 !important;
 }
 #SiteNav > li.site-nav--active {
-  background: #314e9c;
+  background: none;
 }
 .list--inline > li {
   padding: 15px;
@@ -751,7 +751,7 @@ a:focus {
   display: flex;
   justify-content: center;
   width: 100vw;
-  background-color: #151618;
+  background-color: #f5f6fb;
   border-bottom: 5px solid #0073ff;
   height: 6rem;
 }
@@ -763,7 +763,7 @@ a:focus {
   width: 1200px;
 
   a {
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -1533,4 +1533,29 @@ a:focus {
 
 .maker_box_review_image {
   margin-bottom: 1rem;
+}
+
+// Coming Soon
+.coming_soon {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#back {
+  border: 5px solid #1b1d44;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 2rem;
+  outline: none;
+  background-color: none;
+  transition: 0.5s cubic-bezier(0.44, 0.13, 0.48, 0.87);
+  &:hover {
+    background-color: #1b1d44;
+    color: white;
+  }
 }

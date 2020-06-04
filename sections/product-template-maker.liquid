@@ -3,10 +3,7 @@
      font-family: pt-sans-pro, sans-serif;
      color: #4a4a4a;
     }
-  
-    .product__price {
-    
-    }
+ 
   
     .product-single__description p {
     font-family: pt-sans-pro, sans-serif;
@@ -75,15 +72,16 @@
     color: #17181a;
     border: 1px solid #17181a;
    }
-   .jdgm-write-rev-link a:hover {
+   .jdgm-write-rev-link a:focus {
     color: #17181a;
    }
 
-    .jdgm-star::after {
+    .jdgm-star:focus {
         color: #17181a;
     }
     .jdgm-rev-widg__summary-text {
-    
+      font-family: pt-sans-pro, sans-serif;
+    color: #4a4a4a;
     }
   </style>
   
@@ -218,7 +216,7 @@
   
   
             <div class="product__price">
-              {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
+              {% include 'product-price-maker', variant: current_variant, show_vendor: section.settings.show_vendor %}
             </div>
   
             {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}

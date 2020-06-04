@@ -1,91 +1,106 @@
 <style>
-    .product-single__title {
-     font-family: pt-sans-pro, sans-serif;
-     color: #4a4a4a;
-    }
+  .product-single__title {
+    font-family: Almaq, sans-serif;
+   color: #087b00;
+  }
+
+
+  .product-single__description p {
+  font-family:  Helvetica, sans-serif;
+   color: #4a4a4a;
+  }
+
+  .product-single__description h1, 
+  h2, 
+  h3, 
+  h4, 
+  h5, 
+  h6 {
+    color: #087b00;
+    font-family: Almaq, sans-serif;
+
+  }
+  .product-form__item label {
+ 
+  }
+  .btn[aria-disabled] {
+ 
+  }
+  .btn[aria-disabled]:hover {
   
-    .product__price {
-    
-    }
-  
-    .product-single__description p {
-    font-family: pt-sans-pro, sans-serif;
-     color: #9b9b9b;
-    }
-    .product-form__item label {
-   
-    }
-    .btn[aria-disabled] {
-   
-    }
-    .btn[aria-disabled]:hover {
-    
-    }
+  }
 .btn--secondary-accent  {
-   background-color: #9b9b9b;
-   color: white;
+ background-color: #9b9b9b;
+ color: white;
+ border-radius: 0;
+ outline: none;
+ }
+
+ .btn--secondary-accent:not([disabled]):hover,
+.btn--secondary-accent:focus {
+  background-color: #087b00;
+  color: white;
+  outline: none;
+  
+}
+.shopify-payment-button{
+   background-color: #161719;
    border-radius: 0;
    outline: none;
-   }
+   height: 44px;
 
-   .btn--secondary-accent:not([disabled]):hover,
-  .btn--secondary-accent:focus {
-    background-color: #00CCFF;
-    color: white;
-    outline: none;
-    
-  }
-  .shopify-payment-button{
-     background-color: #161719;
-     border-radius: 0;
-     outline: none;
-     height: 44px;
-
- }
+}
 
 .shopify-payment-button:not([disabled]):hover,
 .shopify-payment-button:focus {
-     background-color: #00CCFF;
-     outline: none;
+   background-color: #087b00;
+   outline: none;
 
+}
+
+._2ogcW-Q9I-rgsSkNbRiJzA {
+   animation: none;
+   transition-duration: 0s;
+   transition: none;
+}
+
+ .jdgm-rev-widg {
+ 
  }
-  
- ._2ogcW-Q9I-rgsSkNbRiJzA {
-     animation: none;
-     transition-duration: 0s;
-     transition: none;
+
+ .jdgm-rev-widg__title {
+  font-family: pt-sans-pro, sans-serif;
  }
-  
-   .jdgm-rev-widg {
-   
-   }
-  
-   .jdgm-rev-widg__title {
-    font-family: pt-sans-pro, sans-serif;
-   }
-  
-   .jdgm-write-rev-link {
-    font-family: pt-sans-pro, sans-serif;
-    color: #4a4a4a;
-    border: 1px solid #4a4a4a;
-   }
 
-   .jdgm-write-rev-link:hover {
-    font-family: pt-sans-pro, sans-serif;
-    color: #17181a;
-    border: 1px solid #17181a;
-   }
-   .jdgm-write-rev-link a:hover {
-    color: #17181a;
-   }
+ .jdgm-write-rev-link {
+  font-family: pt-sans-pro, sans-serif;
+  color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+ }
 
-    .jdgm-star::after {
-        color: #17181a;
-    }
-    .jdgm-rev-widg__summary-text {
-    
-    }
-  </style>
+ .jdgm-write-rev-link:hover {
+  font-family: pt-sans-pro, sans-serif;
+  color: #17181a;
+  border: 1px solid #17181a;
+ }
+ .jdgm-write-rev-link a:focus {
+  color: #17181a;
+ }
+
+  .jdgm-star:focus {
+      color: #17181a;
+  }
+  .jdgm-rev-widg__summary-text {
+  font-family: pt-sans-pro, sans-serif;
+  color: #4a4a4a;
+  }
+
+  .product-form__item label {
+    cursor: auto;
+    font-family: Almaq, sans-serif;
+    color: black;
+  }
+</style>
   
   <div class="product-template__container page-width"
     id="ProductSection-{{ section.id }}"

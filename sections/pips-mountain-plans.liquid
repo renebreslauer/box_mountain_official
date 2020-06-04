@@ -7,11 +7,10 @@
             <h1>{{section.settings.pips_item_price1}}</h1>
             <p>{{section.settings.pips_item_description1}}</p>
             <div class="pips_item_footer">
-            <a href="{{section.settings.pips_product1}}">
                 <button>
-                    {{section.settings.pips_option1}}
+                {{section.settings.pips_option1}}
                 </button>
-            </a>
+          
             </div>
         </div>
         <div class="pips_item">
@@ -19,7 +18,9 @@
             <h1>{{section.settings.pips_item_price2}}</h1>
             <p>{{section.settings.pips_item_description2}}</p>
             <div class="pips_item_footer">
-                <button>{{section.settings.pips_option2}}</button>
+                <a href="{{section.settings.pips_product1}}">
+                <button>{{section.settings.pips_option2}}</button>  
+            </a>
             </div>
         </div>
     </div>
@@ -31,7 +32,9 @@
             <h1>{{section.settings.pips_item_price3}}</h1>
             <p>{{section.settings.pips_item_description3}}</p>
             <div class="pips_item_footer">
+                <a href="{{section.settings.pips_product2}}">
                 <button>{{section.settings.pips_option3}}</button>
+            </a>
             </div>
 
         </div>
@@ -223,6 +226,11 @@
             "id": "pips_product1",
             "label": "Pips Product 1 Link"
         
+        },
+        {
+            "type": "url",
+            "id": "pips_product2",
+            "label": "Pips Product 2 Link"
         }
         ]
     }

@@ -7,7 +7,7 @@
         <meta name="theme-color" content="{{ settings.color_button }}">
         <link rel="canonical" href="{{ canonical_url }}">
         <link href="https://use.typekit.net/suv3yph.css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/b5f8f830bd.js" crossorigin="anonymous"></script>
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/b5f8f830bd.js"></script>
         {%- if settings.favicon != blank -%}
             <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
         {%- endif -%}
@@ -98,7 +98,7 @@
         predictiveSearchShowVendor: {{ settings.predictive_search_show_vendor | json }}
       }
     }
-
+  
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
 
