@@ -517,6 +517,7 @@ a:focus {
   .instructional_steps_row_left {
     grid-template-columns: repeat(1, 1fr);
     width: 80vw;
+    justify-items: center;
   }
 }
 
@@ -530,6 +531,7 @@ a:focus {
   .instructional_steps_row_right {
     grid-template-columns: repeat(1, 1fr);
     width: 80vw;
+    justify-items: center;
   }
 }
 
@@ -570,12 +572,16 @@ a:focus {
   margin: 0px 40px;
   margin: 2rem;
 }
-
-#maker_instruction_image_2,
-#maker_instruction_image_4 {
-  order: 1;
+@media screen and (max-width: 950px) {
+  .maker_box_instructions_container {
+    display: flex;
+    justify-content: center;
+  }
+  #maker_instruction_image_2,
+  #maker_instruction_image_4 {
+    order: 1;
+  }
 }
-
 // CRYPTID CRATE HOMEPAGE
 
 .cryptid-crate-hero {
@@ -1172,7 +1178,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 30rem;
   width: 100vw;
   flex-direction: column;
   background: rgb(88, 208, 239);
