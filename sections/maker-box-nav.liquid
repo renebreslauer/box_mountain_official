@@ -1,17 +1,19 @@
 <section class="maker-box-nav">
-    <div class="maker-box-nav-wrapper">
-        <div>
-            <a href="{{section.settings.maker_box_nav_logo_link}}"><img class="maker-box-nav-logo" src="{{section.settings.maker_box_nav_logo | img_url: '150x'}}"></a>
-        </div>
-        <div>
-            <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link1}}">Plans</a>
-            <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link2}}">FAQ</a>
-            <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link3}}">About</a>
-            <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link4}}">Filaments</a>
-        </div>
+    <div class="maker-box-nav-wrapper" id="myTopnav">
+
+        <a href="{{section.settings.maker_box_nav_logo_link}}"><img class="maker-box-nav-logo" src="{{section.settings.maker_box_nav_logo | img_url: '150x'}}"></a>
+
+        <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link1}}">Plans</a>
+        <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link2}}">FAQ</a>
+        <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link3}}">About</a>
+        <a class="maker-box-nav-link" href="{{section.settings.maker_nav_link4}}">Filaments</a>
+
+        <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
     </div>
 </section>
-
 {% schema %}
 {
     "name": "Maker Box Nav",
