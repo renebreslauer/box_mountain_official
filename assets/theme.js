@@ -29,6 +29,15 @@ function myFunctionPips() {
   }
 }
 
+function homeFunction() {
+  var x = document.getElementById('homeTopnav')
+  if (x.className === 'home-nav-wrapper') {
+    x.className += ' homeresponsive'
+  } else {
+    x.className = 'home-nav-wrapper'
+  }
+}
+
 window.theme = window.theme || {}
 
 /* ================ SLATE ================ */
