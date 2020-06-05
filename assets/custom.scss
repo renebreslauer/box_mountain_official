@@ -2038,3 +2038,138 @@ a:focus {
     font-size: 14px;
   }
 }
+
+// Home Nav
+
+.home-nav {
+  width: 100vw;
+  background-color: #3654a0;
+  padding: 0 5%;
+}
+.home-nav-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #3654a0;
+  align-items: center;
+}
+.home-nav-link {
+  color: white;
+  font-family: p22-underground, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 14px 3rem;
+  &:hover {
+    color: #1b1d44;
+  }
+}
+
+.home-nav-wrapper a:hover {
+  color: #1b1d44;
+}
+
+.home-nav-link a:hover {
+  color: #1b1d44;
+}
+
+.home-nav-wrapper #home-fa-bars {
+  position: absolute;
+  right: 0;
+  top: 1;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  color: white;
+  &:hover {
+    color: #1b1d44;
+  }
+}
+
+.home-nav-wrapper.responsive a:hover {
+  color: #1b1d44;
+}
+
+.home-nav-logo {
+  min-width: 30px;
+}
+
+@media screen and (min-width: 851px) {
+  .home-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .home-nav-wrapper {
+    width: 1200px;
+  }
+
+  .home-nav-logo a {
+    padding-left: 0;
+  }
+}
+
+.home-nav-wrapper a.active {
+  background-color: #3654a0;
+  float: left;
+}
+.home-nav-wrapper .home_icon {
+  display: none;
+  font-size: 2rem;
+  right: 1;
+}
+
+.placeholder {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .home-nav-logo {
+    padding-left: 2rem;
+  }
+
+  .home-nav {
+    display: flex;
+    align-items: center;
+    padding: 0px 0;
+  }
+  .home-nav-wrapper {
+    align-items: initial;
+    padding-right: 0;
+  }
+  .placeholder {
+    display: block;
+    width: 0;
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .home-nav-wrapper a:not(:last-child) {
+    display: none;
+  }
+  .home-nav-wrapper a.home_icon {
+    float: right;
+    display: block;
+    top: -1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home-nav-wrapper.homeresponsive {
+    position: relative;
+    width: 100vw;
+    flex-direction: column;
+    align-items: initial;
+    padding: 10px 0;
+  }
+  .home-nav-wrapper.homeresponsive .home_icon {
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+  }
+  .home-nav-wrapper.homeresponsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .home-nav-wrapper.homeresponsive .home-nav {
+    padding: 0;
+  }
+}
