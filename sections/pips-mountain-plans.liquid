@@ -1,16 +1,16 @@
 <section class="pips-plans">
     <h1 class="pips_plans_title">{{section.settings.pips_plans_title}}</h1>
-    <h2 class="pips_plans_subtitle">{{section.settings.pips_plans_subtitle}}</h2>
     <div class="pips_plans_grid">
         <div class="pips_item">
             <h2>{{section.settings.pips_item_title1}}</h2>
             <h1>{{section.settings.pips_item_price1}}</h1>
             <p>{{section.settings.pips_item_description1}}</p>
             <div class="pips_item_footer">
-                <button>
-                {{section.settings.pips_option1}}
-                </button>
-          
+                <a href="{{section.settings.pips_product_link1}}">
+                    <button>
+                        {{section.settings.pips_option1}}
+                    </button>
+                </a>
             </div>
         </div>
         <div class="pips_item">
@@ -18,52 +18,13 @@
             <h1>{{section.settings.pips_item_price2}}</h1>
             <p>{{section.settings.pips_item_description2}}</p>
             <div class="pips_item_footer">
-                <a href="{{section.settings.pips_product1}}">
-                <button>{{section.settings.pips_option2}}</button>  
-            </a>
+                <a href="{{section.settings.pips_product_link2}}">
+                    <button>{{section.settings.pips_option2}}</button>
+                </a>
             </div>
         </div>
     </div>
-    <span class="highlight-container"><span class="highlight"></span><h1 class="pips_multimonth_title">{{section.settings.pips_multiplan_subtitle}}</h1></span></span>
-    <h2 class="pips_multimonth_description">{{section.settings.pips_multiplan_description}}</h2>
-    <div class="pips_multiplans_grid">
-        <div class="pips_item">
-            <h2>{{section.settings.pips_item_title3}}</h2>
-            <h1>{{section.settings.pips_item_price3}}</h1>
-            <p>{{section.settings.pips_item_description3}}</p>
-            <div class="pips_item_footer">
-                <a href="{{section.settings.pips_product2}}">
-                <button>{{section.settings.pips_option3}}</button>
-            </a>
-            </div>
 
-        </div>
-        <div class="pips_item">
-            <h2>{{section.settings.pips_item_title4}}</h2>
-            <h1>{{section.settings.pips_item_price4}}</h1>
-            <p>{{section.settings.pips_item_description4}}</p>
-            <div class="pips_item_footer">
-                <button>{{section.settings.pips_option4}}</button>
-            </div>
-        </div>
-        <div class="pips_item">
-            <h2>{{section.settings.pips_item_title5}}</h2>
-            <h1>{{section.settings.pips_item_price5}}</h1>
-            <p>{{section.settings.pips_item_description5}}</p>
-            <div class="pips_item_footer">
-                <button>{{section.settings.pips_option5}}</button>
-            </div>
-        </div>
-        <div class="pips_item">
-            <h2>{{section.settings.pips_item_title6}}</h2>
-            <h1>{{section.settings.pips_item_price6}}</h1>
-            <p>{{section.settings.pips_item_description6}}</p>
-            <div class="pips_item_footer">
-
-                <button>{{section.settings.pips_option6}}</button>
-            </div>
-        </div>
-    </div>
 </section>
 
 {% schema %}
@@ -77,15 +38,11 @@
             "label": "Pips Plans Title",
             "default": "Choose Your Plan"
         },
-        { "type": "text",
-        "id": "pips_plans_subtitle",
-        "label": "Pips Plans Subtitle",
-        "default": "Single Purchases"
-}, {
+         {
             "type": "text",
             "id": "pips_item_title1",
             "label": "Pips Item Title 1",
-            "default": "Pips Calendar Box - Single Month"
+            "default": "Pips Calendar Box"
         }, {
             "type": "text",
             "id": "pips_item_price1",
@@ -124,113 +81,13 @@
         },
         {
             "type": "url",
+            "id": "pips_product_link1",
+            "label": "Pips Product Link 1"
+        },
+        {
+            "type": "url",
             "id": "pips_product_link2",
             "label": "Pips Product Link 2"
-        },{
-            "type": "text",
-            "id": "pips_multiplan_subtitle",
-            "label": "Pips Multimonth Subtitle",
-            "default": "Save More with Multimonth!"
-        },
-        {
-            "type": "text",
-            "id": "pips_multiplan_description",
-            "label": "Pips Multiplan Description",
-            "default": "Prepay for 3 months or more and get a discount! Each month you will receive a mystery box containing 30 individually bagged and numbered dice. Boxes ship around the 25th of each month. Free shipping in the US!"
-        },
-        {
-            "type": "text",
-            "id": "pips_item_title3",
-            "label": "Pips Item Title 3",
-            "default": "Month to Month"
-        }, {
-            "type": "text",
-            "id": "pips_item_price3",
-            "label": "Pips Item Price 3",
-            "default": "$39.99"
-        }, {
-            "type": "text",
-            "id": "pips_item_description3",
-            "label": "Pips Item Description 3",
-            "default": "Bundle and save."
-        }, {
-            "type": "text",
-            "id": "pips_option3",
-            "label": "Pips Button 1",
-            "default": "Choose"
-        },
-        {
-            "type": "text",
-            "id": "pips_item_title4",
-            "label": "Pips Item Title 4",
-            "default": "3 Month Prepay"
-        }, {
-            "type": "text",
-            "id": "pips_item_price4",
-            "label": "Pips Item Price 4",
-            "default": "$105.00"
-        }, {
-            "type": "text",
-            "id": "pips_item_description4",
-            "label": "Pips Item Description 4",
-            "default": "Bundle more and save more."
-        }, {
-            "type": "text",
-            "id": "pips_option4",
-            "label": "Pips Button 4",
-            "default": "Choose"
-        },
-        {
-            "type": "text",
-            "id": "pips_item_title5",
-            "label": "Pips Item Title 5",
-            "default": "6 Month Prepay"
-        }, {
-            "type": "text",
-            "id": "pips_item_price5",
-            "label": "Pips Item Price 5",
-            "default": "$105.00"
-        }, {
-            "type": "text",
-            "id": "pips_item_description5",
-            "label": "Pips Item Description 5",
-            "default": "Bundle more and save EVEN more."
-        }, {
-            "type": "text",
-            "id": "pips_option5",
-            "label": "Pips Button 5",
-            "default": "Choose"
-        },
-        {
-            "type": "text",
-            "id": "pips_item_title6",
-            "label": "Pips Item Title 6",
-            "default": "12 Month Prepay"
-        }, {
-            "type": "text",
-            "id": "pips_item_price6",
-            "label": "Pips Item Price 6",
-            "default": "$336.00"
-        }, {
-            "type": "text",
-            "id": "pips_item_description6",
-            "label": "Pips Item Description 6",
-            "default": "Best value!"
-        }, {
-            "type": "text",
-            "id": "pips_option6",
-            "label": "Pips Button 6",
-            "default": "Choose"
-        }, {
-            "type": "url",
-            "id": "pips_product1",
-            "label": "Pips Product 1 Link"
-        
-        },
-        {
-            "type": "url",
-            "id": "pips_product2",
-            "label": "Pips Product 2 Link"
         }
         ]
     }

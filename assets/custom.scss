@@ -1856,11 +1856,6 @@ a:focus {
   color: #49494a;
 }
 
-.pips_plans_subtitle {
-  font-family: Almaq, sans-serif;
-  margin-bottom: 2rem;
-  color: #c3c3c3;
-}
 .pips_plans_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1868,13 +1863,12 @@ a:focus {
   justify-items: center;
   align-items: center;
 }
-.pips_multiplans_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 1200px;
-  justify-items: center;
-  align-items: center;
+@media screen and (max-width: 600px) {
+  .pips_plans_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
+
 .pips_item {
   width: 18rem;
   height: 25rem;
@@ -2033,5 +2027,14 @@ a:focus {
   &:hover {
     background-color: #1b1d44;
     color: white;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .site-header__icon {
+    font-size: 12px;
+  }
+  .site-header__logo-link {
+    font-size: 14px;
   }
 }

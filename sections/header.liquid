@@ -28,18 +28,23 @@
                 <a class="site-header__logo-link" href="{{ routes.root_url }}">{{ shop.name }}</a>
             </div>
             <div class="announcement-links">
-                <a class="site-header__icon site-header__account" href="#"><i class="fas fa-book-open"></i>
+                <a class="site-header__icon site-header__account" href="{{section.settings.catalogue_link}}">
+                    <i class="fas fa-book-open"></i>
 
-Catalog</a>
+                    Catalog</a>
                 {% if shop.customer_accounts_enabled %}
                     {% if customer %}
                         <a href="{{ routes.account_url }}" class="site-header__icon site-header__account">
-                            <img class="topnavimg" src="{{'icon-account.png' | asset_url }}">Your Account
+
+                            <i class="fas fa-user"></i>
+                            Your Account
                         </a>
                     {% else %}
                         <a href="{{ routes.account_login_url }}" class="site-header__icon site-header__account">
                             {% include 'icon-login' %}
-                            <img class="topnavimg" src="{{'icon-account.png' | asset_url }}">Login
+
+                            <i class="fas fa-door-open"></i>
+                            Login
                         </a>
                     {% endif %}
                 {% endif %}
@@ -63,3 +68,16 @@ Catalog</a>
         </div>
     </div>
 </div>
+
+{% schema %}
+{
+"name": "Header",
+"settings": [
+{ "type": "url",
+    "id": "catalogue_link",
+    "label": "Catalogue Link"
+   
+}
+]
+}
+{% endschema %}
