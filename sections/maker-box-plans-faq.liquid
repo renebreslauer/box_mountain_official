@@ -20,7 +20,9 @@
         </h3>
         <p>{{section.settings.maker_box_plans_answer3}}</p>
         <h2>{{section.settings.maker_box_faq_final}}</h2>
-        <h2 class="faq_link">{{section.settings.maker_box_faq_link}}</h2>
+        <a href="{{section.settings.maker_box_faq_link}}">
+            <h2 class="maker_box_faq_link_url">{{section.settings.maker_box_faq_link}}</h2>
+        </a>
     </div>
 </section>
 
@@ -89,6 +91,12 @@
             "id": "maker_box_faq_link",
             "label": "Maker Box FAQ Link",
             "default": "Head over to our FAQ page or reach out to us with any questions!"
+        },
+        {
+            "type": "url",
+            "id": "maker_box_faq_link_url",
+            "label": "Link to Maker FAQ"
+
         }
     ]
 }
