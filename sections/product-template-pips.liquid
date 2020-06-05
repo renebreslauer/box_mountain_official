@@ -105,6 +105,10 @@
     display: flex;
     align-items: center;
   }
+  .bold-ro__recurring-title {
+    font-family: Almaq, sans-serif;
+    font-weight: 300;
+  }
 </style>
   
   <div class="product-template__container page-width"
@@ -238,7 +242,7 @@
   
   
             <div class="product__price">
-              {% include 'product-price', variant: current_variant, show_vendor: section.settings.show_vendor %}
+              {% include 'product-price-pips', variant: current_variant, show_vendor: section.settings.show_vendor %}
             </div>
   
             {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
