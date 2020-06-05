@@ -11,6 +11,23 @@ function myFunction() {
     x.className = 'maker-box-nav-wrapper'
   }
 }
+function myFunctionCryptid() {
+  var x = document.getElementById('cryptidTopnav')
+  if (x.className === 'cryptid-box-nav-wrapper') {
+    x.className += ' cryptidresponsive'
+  } else {
+    x.className = 'cryptid-box-nav-wrapper'
+  }
+}
+
+function myFunctionPips() {
+  var x = document.getElementById('pipsTopnav')
+  if (x.className === 'pips-box-nav-wrapper') {
+    x.className += ' pipsresponsive'
+  } else {
+    x.className = 'pips-box-nav-wrapper'
+  }
+}
 
 window.theme = window.theme || {}
 

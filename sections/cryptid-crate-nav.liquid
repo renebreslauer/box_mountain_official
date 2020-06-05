@@ -1,14 +1,13 @@
 <section class="cryptid-box-nav">
-    <div class="cryptid-box-nav-wrapper">
-        <div>
-            <a href="{{section.settings.cryptid_box_nav_logo_link}}"><img class="cryptid-box-nav-logo" src="{{section.settings.cryptid_box_nav_logo | img_url: '150x'}}"></a>
-        </div>
-        <div>
-            <a class="cryptid-box-nav-link" href="{{section.settings.cryptid_nav_plans}}">Plans</a>
-            <a class="cryptid-box-nav-link" href="#">FAQ</a>
-            <a class="cryptid-box-nav-link" href="#">About</a>
-            <a class="cryptid-box-nav-link" href="#">Filaments</a>
-        </div>
+    <div class="cryptid-box-nav-wrapper" id="cryptidTopnav">
+        <a href="{{section.settings.cryptid_box_nav_logo_link}}"><img class="cryptid-box-nav-logo" src="{{section.settings.cryptid_box_nav_logo | img_url: '70x'}}"></a>
+        <a class="cryptid-box-nav-link" href="{{section.settings.cryptid_nav_plans}}">Plans</a>
+        <a class="cryptid-box-nav-link" href="#">FAQ</a>
+        <a class="cryptid-box-nav-link" href="#">About</a>
+        <a class="cryptid-box-nav-link" href="#">Filaments</a>
+        <a class="icon-cryptid" href="javascript:void(0);" onclick="myFunctionCryptid()">
+            <i class="fa fa-bars" id="cryptid-fa-bars"></i>
+        </a>
     </div>
 </section>
 
