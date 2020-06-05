@@ -3,6 +3,15 @@ $('button#back').on('click', function (e) {
   window.history.back()
 })
 
+function myFunction() {
+  var x = document.getElementById('myTopnav')
+  if (x.className === 'maker-box-nav-wrapper') {
+    x.className += ' responsive'
+  } else {
+    x.className = 'maker-box-nav-wrapper'
+  }
+}
+
 window.theme = window.theme || {}
 
 /* ================ SLATE ================ */
@@ -2729,7 +2738,6 @@ theme.MobileNav = (function () {
     closeMobileNav: closeMobileNav,
   }
 })(jQuery)
-
 ;(function () {
   var selectors = {
     backButton: '.return-link',
@@ -4425,7 +4433,6 @@ theme.SearchResultsTemplate = (function () {
 })()
 
 window.theme = window.theme || {}
-
 ;(function () {
   // (a11y) This function will be used by the Predictive Search Component
   // to announce the number of search results
