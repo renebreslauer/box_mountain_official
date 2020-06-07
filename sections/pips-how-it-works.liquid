@@ -16,7 +16,9 @@
             </div>
         </div>
     </div>
-    <button class="how_it_works_button">{{section.settings.how_it_works_button_text}}</button>
+    <a href="{{section.settings.pips_how_it_works}}">
+        <button class="how_it_works_button">{{section.settings.how_it_works_button_text}}</button>
+    </a>
 </section>
 
 {% schema %}
@@ -59,6 +61,11 @@
 "id": "how_it_works_button_text",
 "label": "How It Works Button Text",
 "default": "Get Started"
+},
+{
+    "type": "url",
+    "id": "pips_how_it_works",
+    "label": "Pips How It Works Link"
 }
 ]
 }

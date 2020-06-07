@@ -2,9 +2,8 @@
     <div class="cryptid-box-nav-wrapper" id="cryptidTopnav">
         <a href="{{section.settings.cryptid_box_nav_logo_link}}"><img class="cryptid-box-nav-logo" src="{{section.settings.cryptid_box_nav_logo | img_url: '70x'}}"></a>
         <a class="cryptid-box-nav-link" href="{{section.settings.cryptid_nav_plans}}">Plans</a>
-        <a class="cryptid-box-nav-link" href="#">FAQ</a>
-        <a class="cryptid-box-nav-link" href="#">About</a>
-        <a class="cryptid-box-nav-link" href="#">Filaments</a>
+        <a class="cryptid-box-nav-link" href="{{section.settings.cryptid_nav_faq}}">FAQ</a>
+        <a class="cryptid-box-nav-link" href="{{section.settings.cryptid_nav_inside_box}}">What's in the Box?</a>
         <a class="icon-cryptid" href="javascript:void(0);" onclick="myFunctionCryptid()">
             <i class="fa fa-bars" id="cryptid-fa-bars"></i>
         </a>
@@ -28,6 +27,16 @@
             "type": "url",
             "id":"cryptid_nav_plans",
             "label": "Cryptid Nav Plans Link"
+        },
+        {
+            "type": "url",
+            "id":"cryptid_nav_faq",
+            "label": "Cryptid Nav FAQ"
+        },
+        {
+            "type": "url",
+            "id":"cryptid_nav_inside_box",
+            "label": "Cryptid Nav Inside the Box"
         }
     ]
 }

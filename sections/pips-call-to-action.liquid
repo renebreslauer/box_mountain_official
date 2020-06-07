@@ -5,8 +5,8 @@
                 <h2>{{section.settings.pips_action_box_title}}</h2>
             </div>
         <div class="pips_action_box_buttons">
-            <button class="pips_order_button">{{section.settings.pips_button_text1}}</button>
-            <button class="pips_order_more_button">{{section.settings.pips_button_text2}}</button>
+            <a href="{{section.settings.pips_action_link1}}"></a><button class="pips_order_button">{{section.settings.pips_button_text1}}</button></a>
+            <a href="{{section.settings.pips_action_link2}}"></a><button class="pips_order_more_button">{{section.settings.pips_button_text2}}</button></a>
         </div>
             </div>
         </div>
@@ -40,6 +40,16 @@
             "type": "image_picker",
             "id": "pip_icon",
             "label": "Pip Call-To-Action Icon"
+        },
+        {
+            "type": "url",
+            "id": "pips_action_link1",
+            "label": "Pips Action Link 1"
+        },
+        {
+            "type": "url",
+            "id": "pips_action_link2",
+            "label": "Pips Action Link 2"
         }
     ]
 }

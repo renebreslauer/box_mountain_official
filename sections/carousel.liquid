@@ -6,17 +6,25 @@
                     <span>customers</span>
                     are saying about our boxes</h2>
             </div>
-            <img src={{section.settings.carousel_image1 | img_url: '100x'}}>
-            <h2>So glad I joined Maker Box. It's really the best way to try many filaments in my opinion.</h2>
-            <p>Neil Siebenthal</p>
-            <img src={{section.settings.carousel_image2 | img_url: '100x' }}>
+            <div class="carousel_row">
+                <div class="carousel_image_logo">
+                    <img src={{section.settings.carousel_image1 | img_url: '100x' }} class="carousel_logo">
+                </div>
+                <div class="carousel_body">
+                    <h2>"So glad I joined Maker Box. It's really the best way to try many filaments, in my opinion."</h2>
+                    <p class="quote_name">Neil Siebenthal</p>
+                </div>
+
+
+            </div>
+
         </div>
     </div>
 </div>
 
 {% schema %}
 
-{
+
 {
   "name": "Box Mountain Carousel",
   "settings": [
@@ -29,6 +37,11 @@
         "type": "image_picker",
         "id": "carousel_image2",
         "label": "Carousel Image 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "carousel_image3",
+        "label": "Carousel Image 3"
       }
     ]
 }

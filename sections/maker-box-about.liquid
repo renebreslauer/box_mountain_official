@@ -1,33 +1,32 @@
-<div class="maker_about_wrapper">
-<div class="maker_about_hero">
-<img src="{{section.settings.maker_about_hero_image | img_url: '900x'}}" class="maker_about_hero_image">
-    <h1>{{section.settings.maker_about_hero_text}}</h1>
-</div>
-<div class="maker_about_icon_group">
-<div class="maker_icon_group">
-<img src="{{section.settings.maker_icon1 | img_url: '150x'}}">
-<p>{{section.settings.maker_caption1}}</p>
-</div>
-<div class="maker_icon_group">
-<img src="{{section.settings.maker_icon2 | img_url: '150x'}}">
-<p>{{section.settings.maker_caption2}}</p>
-</div>
-<div class="maker_icon_group">
-<img src="{{section.settings.maker_icon3 | img_url: '150x'}}">
-<p>{{section.settings.maker_caption3}}</p>
-</div>
-</div>
-<div class="maker_about_text">
-<p>{{section.settings.maker_paragraph1}}</p>
-<p>{{section.settings.maker_paragraph2}}</p>
-<p>{{section.settings.maker_paragraph3}}</p>
-</div>
-<img src="{{section.settings.printed_solid | img_url: '200x'}}" class="printed_solid_image">
-<div class="maker_about_contact">
-<h2>{{section.settings.maker_contact_text}}</h2>
-<a href="{{section.settings.maker_contact_link}}"><button>{{section.settings.maker_about_button_text}}</button></a>
-</div>
-</div>
+<div class="page-wrapper">
+    <div class="maker_about_hero">
+        <img src="{{section.settings.maker_about_hero_image | img_url: '900x'}}" class="maker_about_hero_image">
+        <h1>{{section.settings.maker_about_hero_text}}</h1>
+    </div>
+    <div class="maker_about_icon_group">
+        <div class="maker_icon_group">
+            <img src="{{section.settings.maker_icon1 | img_url: '150x'}}">
+            <p>{{section.settings.maker_caption1}}</p>
+        </div>
+        <div class="maker_icon_group">
+            <img src="{{section.settings.maker_icon2 | img_url: '150x'}}">
+            <p>{{section.settings.maker_caption2}}</p>
+        </div>
+        <div class="maker_icon_group">
+            <img src="{{section.settings.maker_icon3 | img_url: '150x'}}">
+            <p>{{section.settings.maker_caption3}}</p>
+        </div>
+    </div>
+    <div class="page-text">
+        {{page.content}}
+    </div>
+    <div class="maker_about_contact">
+        <h2>{{section.settings.maker_contact_text}}</h2>
+        <a href="{{section.settings.maker_contact_link}}">
+            <button>{{section.settings.maker_about_button_text}}</button>
+        </a>
+
+    </div>
 </div>
 
 {% schema %}
@@ -78,29 +77,6 @@
     "default": "More than 100 unique filaments."
 },
 {
-    "type": "text",
-    "id": "maker_paragraph1",
-    "label": "Maker About Paragraph 1",
-    "default": "Maker Box, owned and operated by Box Mountain LLC in Newark, DE seeks to help grow the desktop 3D Printing industry. It offers the key service of helping enthusiastic 3D Printer owners who might not be able to afford to buy a spool of every single new filament that comes out try out samples of all of these filaments. It also provides the service of helping new filament brands reach a large new customer base."
-
-},
-{
-    "type": "text",
-    "id": "maker_paragraph2",
-    "label": "Maker About Paragraph 2",
-    "default": "Maker Box was founded in early 2016 by two college students who really just wanted a better way to sample new filaments. With limited budgets for their 3D printing hobby, Kevin and Nicholas needed a way to try out filaments without the huge expense of an entire spool. Maker Box was born and has now helped thousands of other makers experience a wide variety of 3d printer filaments."
-
-},{
-    "type": "text",
-    "id": "maker_paragraph3",
-    "label": "Maker About Paragraph 3",
-    "default": "As Maker Box continued to grow, the operation required more space, so in late 2016 Nick and Kevin partnered with Matt from Printed Solid to handle fulfillment, with Printed Solid eventually buying the full business in 2018 as the two students graduated and began their professional careers."
-
-},{
-    "type": "image_picker",
-    "id": "printed_solid",
-    "label": "Printed Solid logo"
-},{
     "type": "text",
     "id": "maker_contact_text",
     "label": "Maker Contact Text",

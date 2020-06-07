@@ -1,49 +1,10 @@
-<div class="maker-box-faq-wrapper">
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question1}}</h2>
-<h3>{{section.settings.maker_faq_answer1}}</h3>
+<div class="page-wrapper">
+    <h1>{{section.settings.maker_box_faq_header}}</h1>
+    <div class="page-text">
+        {{page.content}}
+    </div>
 </div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question2}}</h2>
-<h3>{{section.settings.maker_faq_answer2}}</h3>
-</div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question3}}</h3>
-<h3>{{section.settings.maker_faq_answer3}}</h3>
-</div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question4}}</h2>
-<h3>{{section.settings.maker_faq_answer4}}</h3>
-</div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question5}}</h2>
-<h3>{{section.settings.maker_faq_answer5}}</h3>
-</div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question6}}</h2>
-<h3>{{section.settings.maker_faq_answer6}}</h3>
-</div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question7}}</h2>
-<h3>{{section.settings.maker_faq_answer7}}</h3>
-</div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question8}}</h2>
-<h3>{{section.settings.maker_faq_answer8}}</h3>
-</div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question9}}</h2>
-<h3>{{section.settings.maker_faq_answer9}}</h3>
-</div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question10}}</h2>
-<h3>{{section.settings.maker_faq_answer10}}</h3>
-</div>
-<div class="maker-box-faq-group">
-<h2>{{section.settings.maker_faq_question11}}</h2>
-<h3>{{section.settings.maker_faq_answer11}}</h3>
-</div>
-</div>
+
 
 {% schema %}
 {
@@ -51,52 +12,11 @@
 "settings": [
     {
     "type": "text",
-    "id": "maker_faq_question1",
-    "label": "Maker FAQ Question 1",
-    "default": "What is Maker Box?"
-    },
-    {
-        "type": "text",
-        "id": "maker_faq_answer1",
-        "label": "Maker FAQ Answer 1",
-        "default": "Maker Box is the low cost solution to trying new types of 3D printer filament as well as new manufacturers. If you see cool prints from others in different materials or want to experiment to get the best result, but can’t buy spools of every new filament you see, this is the box for you (pick the explorer plan!)"
-    },
-    {
-        "type": "text",
-    "id": "maker_faq_question2",
-    "label": "Maker FAQ Question 2",
-    "default": "What is inside each box?" 
-    },
-    {
-        "type": "text",
-        "id": "maker_faq_answer2",
-        "label": "Maker FAQ Answer 2",
-        "default": "Explorer and Easy plan boxes contain 4 samples, Everything contains 8, and bi-monthly contain 8 and 16 respectively (2 months worth. )Each sample comes in a sealed recloseable bag containing a desiccant to keep it fresh when it arrives to your door. Each bag has a label on it with manufacturer's advised print settings and additional information to get you started right out of the box. In addition to the samples, we reach out to manufacturers of 3D printing accessories and other related products to get exclusive discounts for our Maker Box subscribers. Past discounts have included hardened nozzles, commercial build plates, and upgraded extruders."
-    },
-    {
-    "type": "text",
-    "id": "maker_faq_question3",
-    "label": "Maker FAQ Question 3",
-    "default": "How much filament do I receive with each sample?"
-    },
-    {
-        "type": "text",
-        "id": "maker_faq_answer3",
-        "label": "Maker FAQ Answer 3",
-        "default": "Each sample is roughly 16.5 meters in length. This is equivalent to about 50 grams of PLA, but will be lower weight for low density materials and higher weight for higher density materials like BronzeFill. We chose do to length instead of weight because some materials, such as metal filled ones, are a lot denser than your typical PLA. This would mean you would receive significantly less printing volume with the same weight of material."
-    },
-    {
-           "type": "text",
-    "id": "maker_faq_question4",
-    "label": "Maker FAQ Question 4",
-    "default": "When will I receive my box?"
-    },
-    {
-        "type": "text",
-        "id": "maker_faq_answer4",
-        "label": "Maker FAQ Answer 4",
-        "default": "Boxes ship on the last Tuesday before or on the 25th of every month. You will receive an email with tracking once our local USPS depot has sorted and scanned the lot of packages. Bi-monthly boxes ship out in February, April, June, August, October, and December. Our customers are always our number one priority and we are here to provide them with a stress-free experience. Please feel free to contact us with any questions or concerns about the status of your box."
-        }
+    "id": "maker_faq_header",
+    "label": "Maker FAQ Header",
+    "default": "Maker Box FAQ"
+       
+    }
     ]
 }
 

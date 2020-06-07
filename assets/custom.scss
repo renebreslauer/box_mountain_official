@@ -38,6 +38,24 @@ h6,
   color: #181938;
 }
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-text {
+  width: 1200px;
+}
+
+@media screen and (max-width: 1220px) {
+  .page-text {
+    width: 80vw;
+  }
+}
+
 /*nav*/
 .main_content {
   padding-top: 0;
@@ -2086,7 +2104,7 @@ a:focus {
   margin-right: 2rem;
   color: white;
   &:hover {
-    color: #1b1d44;
+    color: #1b1d4;
   }
 }
 
@@ -2184,98 +2202,71 @@ a:focus {
   width: 90vw;
 }
 
-// Maker Box About
+// Box Mountain About Us
 
-.maker_about_wrapper {
+.about_us_container {
+  width: 100vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
 }
-.maker_about_hero {
+
+.about_us_text {
+  width: 1200px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 100vw;
-  margin-top: -55px;
-  position: relative;
-  object-fit: cover;
+  padding: 1rem;
   h1 {
-    position: absolute;
-    top: 7rem;
-    color: white;
-    font-family: roboto, sans-serif;
-    font-size: 42px;
-    font-weight: 500;
-    width: 40rem;
+    font-size: 3rem;
     text-align: center;
-  }
-}
-.maker_about_hero_image {
-  width: 100%;
-  object-fit: cover;
-  height: 20rem;
-}
-.maker_about_icon_group {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0px 5px 15px #0000001f;
-}
-.maker_icon_group {
-  text-align: center;
-  margin: 3rem 0;
-  padding: 0 1rem;
-  box-shadow: rgba(0, 0, 0, 1);
-  p {
-    font-family: roboto, sans-serif;
-    font-size: 21px;
-    color: #9b9b9b;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
   }
 }
 
-.maker_about_text {
-  p {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    font-family: roboto, sans-serif;
-    font-size: 21px;
-    color: #9b9b9b;
-    padding: 0 3rem;
-    font-weight: 600;
+@media screen and (max-width: 1200px) {
+  .about_us_text {
+    width: 80vw;
   }
 }
-.printed_solid_image {
-  margin-bottom: 3rem;
-}
-
-.maker_about_contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  width: 35rem;
-  height: 15rem;
-  box-shadow: 0px 5px 15px #0000001f;
-  h2 {
-    font-family: roboto, sans-serif;
-    font-size: 24px;
-    color: #9b9b9b;
-    margin-bottom: 1rem;
-  }
-  button {
-    background-color: #0172ff;
-    color: white;
-    opacity: 1;
-    padding: 18px 36px;
-    font-family: pt-sans-pro, sans-serif;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    &:hover {
-      background-color: #00ccff;
+@media screen and (max-width: 600px) {
+  .about_us_text {
+    h1 {
+      font-size: 1.5rem;
     }
   }
+}
+
+//Home Carousel
+
+.carousel_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.carousel_body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  h2 {
+    width: 600px;
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  p {
+    color: white;
+    text-align: left;
+  }
+}
+
+.carousel_logo {
+  width: 75px;
+  margin: 2rem;
 }
