@@ -31,20 +31,20 @@
                 <a class="site-header__icon site-header__account" href="{{section.settings.catalogue_link}}">
                     <i class="fas fa-book-open"></i>
 
-                    Catalog</a>
+                    <span class="header-link-text">Catalog</span></a>
                 {% if shop.customer_accounts_enabled %}
                     {% if customer %}
                         <a href="{{ routes.account_url }}" class="site-header__icon site-header__account">
 
                             <i class="fas fa-user"></i>
-                            Your Account
+                            <span class="header-link-text">Your Account</span>
                         </a>
                     {% else %}
                         <a href="{{ routes.account_login_url }}" class="site-header__icon site-header__account">
                             {% include 'icon-login' %}
 
                             <i class="fas fa-door-open"></i>
-                            Login
+                            <span class="header-link-text">Login</span>
                         </a>
                     {% endif %}
                 {% endif %}
@@ -58,7 +58,7 @@
                         <span data-cart-count>{{ cart.item_count }}</span>
                         <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
                     </div>
-                    Your Cart
+                    <span class="header-link-text">Your Cart</span>
                 </a>
 
 

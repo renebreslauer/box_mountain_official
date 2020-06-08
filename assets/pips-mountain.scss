@@ -31,9 +31,567 @@ p {
   }
 }
 
+// Pips Nav
+
+.pips-box-nav {
+  width: 100vw;
+  border-bottom: none;
+  background-color: #f0f0f0;
+  padding: 10px 5%;
+}
+
+.pips-box-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  align-items: center;
+}
+
+.pips-box-nav-link {
+  color: #385e05;
+  font-family: Almaq, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 14px 16px;
+  &:hover {
+    color: #077b03;
+  }
+}
+
+.pips-box-nav-wrapper a:hover {
+  color: #077b03;
+}
+
+.pips-box-nav-link a:hover {
+  color: #077b03;
+}
+
+#pips-fa-bars {
+  color: black;
+  &:hover {
+    color: #077b03;
+  }
+}
+.pips-box-nav-wrapper.pipsresponsive a:hover {
+  color: #077b03;
+}
+
+@media screen and (min-width: 851px) {
+  .pips-box-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .pips-box-nav-wrapper {
+    width: 1200px;
+  }
+
+  .pips-box-nav-logo a {
+    padding-left: 0;
+  }
+  #pips_plan_link {
+    margin-left: 60%;
+  }
+}
+
+.pips-box-nav-wrapper a.active {
+  background-color: #f0f0f0;
+  float: left;
+}
+.pips-box-nav-wrapper .icon-pips {
+  display: none;
+  font-size: 2rem;
+  right: 1;
+}
+
+.pips-box-nav-link {
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .pips-box-nav-logo {
+    padding-left: 2rem;
+  }
+
+  .pips-box-nav {
+    padding: 10px 0;
+  }
+  .pips-box-nav-wrapper {
+    align-items: initial;
+    padding-right: 0;
+  }
+  .pips-box-nav-wrapper .icon-pips {
+    margin-right: 3.3rem;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .pips-box-nav-wrapper a:not(:first-child) {
+    display: none;
+  }
+  .pips-box-nav-wrapper a.icon-pips {
+    float: right;
+    display: block;
+    top: 0rem;
+    right: 0rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .pips-box-nav-wrapper.pipsresponsive {
+    position: relative;
+    width: 100vw;
+    flex-direction: column;
+    align-items: initial;
+  }
+  .pips-box-nav-wrapper.pipsresponsive .icon-pips {
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+  }
+  .pips-box-nav-wrapper.pipsresponsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
 .pips-faq-header {
   h1 {
     text-align: center;
     margin-top: 2rem;
+  }
+}
+
+// Pips Plans
+.pips-plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  text-align: center;
+}
+
+.pips_plans_title {
+  font-family: Almaq, sans-serif;
+  margin: 2rem 0;
+  letter-spacing: 0.2rem;
+  color: #49494a;
+}
+
+.pips_plans_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 600px;
+  justify-items: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .pips_plans_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.pips_item {
+  width: 18rem;
+  height: 25rem;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 5rem;
+  position: relative;
+  h1 {
+    font-family: Almaq, sans-serif;
+    letter-spacing: 0.1rem;
+  }
+  h2 {
+    font-family: Almaq, sans-serif;
+  }
+  p {
+    color: #49494a;
+    font-family: Almaq, sans-serif;
+  }
+}
+
+.pips_item_footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+  button {
+    background-color: #077b03;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 25px;
+    outline: none;
+    border: none;
+    font-family: Almaq, sans-serif;
+    &:hover {
+      background-color: #63a35a;
+    }
+  }
+}
+
+.pips_multimonth_title {
+  font-family: Almaq, sans-serif;
+  margin-bottom: 3rem;
+  letter-spacing: 0.2rem;
+  color: #49494a;
+}
+
+.pips_multimonth_description {
+  width: 1200px;
+  font-family: Almaq, sans-serif;
+  margin-bottom: 2rem;
+  color: #c3c3c3;
+}
+
+.highlight-container,
+.highlight {
+  position: relative;
+  z-index: -1;
+}
+
+.highlight-container {
+  display: inline-block;
+  z-index: -1;
+}
+.highlight-container:before {
+  content: ' ';
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: rgba(234, 221, 6, 0.3);
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+  z-index: -1;
+}
+
+// Pips Home About
+
+.pips-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  margin-top: 5rem;
+  overflow: hidden;
+  h1 {
+    color: #077b00;
+    margin-bottom: 3rem;
+    font-family: Almaq, sans-serif;
+    font-weight: 500;
+  }
+}
+.pips_about_group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .pips_about_group {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90vw;
+  }
+}
+.about_image {
+  border-radius: 200%;
+}
+.pips_about_step {
+  p {
+    font-family: Almaq, sans-serif;
+    color: black;
+  }
+}
+
+// Pips Mountain Homepage
+
+.pips_hero {
+  display: flex;
+  justify-content: center;
+  align-items: content;
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  object-fit: contain;
+  overflow: hidden;
+  object-position: top;
+  margin-top: -55px;
+}
+.pips_hero_image {
+  position: absolute;
+  min-width: 100%;
+  z-index: 1;
+  min-height: 50vh;
+  object-fit: cover;
+}
+.pips_hero_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  min-height: 50vh;
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 10;
+}
+
+.pips_hero_text_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 80vw;
+  min-height: 30vh;
+
+  text-align: center;
+}
+.pips_hero_title {
+  z-index: 10;
+  font-size: 5rem;
+  font-family: Almaq, sans-serif;
+  color: black;
+}
+.pips_hero_subtitle {
+  z-index: 10;
+  font-size: 3rem;
+  font-family: Almaq, sans-serif;
+  color: black;
+  margin-bottom: 2rem;
+}
+.pips_hero_button {
+  background-color: #077b00;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-family: Almaq, sans-serif;
+  &:hover {
+    background-color: #63a35a;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pips_hero_title {
+    font-size: 3rem;
+  }
+  .pips_hero_subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+// Pip Home Info Section
+.pip-home-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.pip_info_title {
+  margin-top: 5rem;
+  h1 {
+    color: #087b00;
+    font-family: Almaq, sans-serif;
+    font-weight: 500;
+  }
+}
+.pip_info_grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80vw;
+}
+@media screen and (max-width: 1200px) {
+  .pip_info_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.pip_info_grid_box {
+  display: grid;
+  grid-template-columns: 100px auto;
+  background-color: #f0f0f0;
+  text-align: left;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2% 5%;
+  margin: 0.5rem 1rem;
+  p {
+    font-family: Almaq, sans-serif;
+    color: black;
+    padding-left: 2%;
+    font-weight: 300;
+  }
+}
+
+// Pips Home Call to Action
+
+.pips-call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.pips_call_to_action_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.pips_call_to_action_wrapper:after {
+  background: rgba(7, 123, 0, 0.7);
+  content: '';
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-5deg);
+  transform-origin: 100%;
+  z-index: -1;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.pips_action_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  height: 30vh;
+  width: 60vw;
+  text-align: center;
+  padding: 1rem 2rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  margin-top: 7%;
+
+  h2 {
+    color: #087b00;
+    letter-spacing: 0rem;
+    font-family: Almaq, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  button {
+    color: white;
+    border: none;
+    outline: none;
+    width: 12rem;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    font-family: Almaq, sans-serif;
+  }
+}
+
+.pip_call_to_action_icon {
+  right: 15%;
+  position: absolute;
+  z-index: 10;
+  margin-top: 5rem;
+}
+@media screen and (max-width: 1300px) {
+  .pip_call_to_action_icon {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pip_call_to_action_icon {
+    display: none;
+  }
+}
+
+.pips_order_button {
+  background-color: #899992;
+  margin: 0.5rem;
+  &:hover {
+    background-color: #63a35a;
+  }
+}
+.pips_order_more_button {
+  background-color: #676666;
+  margin: 0.5rem;
+  &:hover {
+    background-color: #63a35a;
+  }
+}
+
+// Pips Home How It Works Section
+
+.pips-how-it-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  h1 {
+    color: #077b00;
+    margin-bottom: 3rem;
+    font-family: Almaq, sans-serif;
+    font-weight: 500;
+  }
+}
+.pips_how_it_works_group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 1200px) {
+  .pips_how_it_works_group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.how_it_works_image {
+  border-radius: 200%;
+}
+.pips_how_it_works_step {
+  p {
+    font-family: Almaq, sans-serif;
+  }
+}
+.how_it_works_button {
+  color: white;
+  border: none;
+  outline: none;
+  width: 12rem;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  font-family: Almaq, sans-serif;
+  background-color: #077b00;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #63a35a;
   }
 }
