@@ -10,11 +10,13 @@
         <div class="hero-box-contain">
             <div class="box-container">
                 <div class="hero-box">
+                    <a href="{{section.settings.box1}}">
                     <img src="{{'box-makerbox.jpg' | asset_url }}">
                 </div>
                 <div class="hero-logo">
                     <img src="{{'logo-makerbox.png' | asset_url }}">
                 </div>
+                </a>
                 <div class="hero-desc">
                     <p>Curated 3D printer filament samples delivered monthly.</p>
                     <a class="link_underline" href="{{section.settings.link_left}}">
@@ -27,11 +29,15 @@
 
             <div class="box-container">
                 <div class="hero-box">
+                                                    <a href="{{section.settings.box2}}">
+
                     <img src="{{'box-pipsmtn.jpg' | asset_url }}">
                 </div>
                 <div class="hero-logo">
+
                     <img src="{{'logo-pipsmtn.png' | asset_url }}">
                 </div>
+                </a>
                 <div class="hero-desc">
                     <p>The monthly dice calendar box, 30 days of unique dice.</p>
                     <a class="link_underline" href="{{section.settings.link_center}}">
@@ -44,11 +50,15 @@
 
             <div class="box-container">
                 <div class="hero-box">
+                                                      <a href="{{section.settings.box3}}">
+
                     <img src="{{'box-cryptidcrate.jpg' | asset_url }}">
                 </div>
                 <div class="hero-logo">
+
                     <img src="{{'logo-cryptidcrate.png' | asset_url }}">
                 </div>
+                </a>
                 <div class="hero-desc">
                     <p>Cryptozoology and paranormally themed boxes.</p>
                     <a class="link_underline" href="{{section.settings.link_right}}">
@@ -81,6 +91,21 @@
             "type": "url",
             "id": "link_right",
             "label": "Link Right"
+        },
+        {
+            "type": "url",
+            "id": "box1",
+            "label": "Box 1"
+        },
+          {
+            "type": "url",
+            "id": "box2",
+            "label": "Box 2"
+        },
+          {
+            "type": "url",
+            "id": "box3",
+            "label": "Box 3"
         }
     ]
 }
