@@ -1,0 +1,151 @@
+<div class="page-wrapper">
+    <div class="cryptid-inside-box-container">
+        <div class="cryptid-inside-box-header">
+            <h1>{{section.settings.whatsinside_title}}</h1>
+            <h2>{{section.settings.whatsinside_subtitle}}</h2>
+        </div>
+        <div class="whats-inside-grid">
+            <div class="grid-text">
+                <h3>{{section.settings.whatsinside_grid_title1}}</h3>
+                <p>{{section.settings.whatsinside_grid_text1}}</p>
+                <a hrc="{{section.settings.whatsinside_button1_url}}">
+                    <button class="cryptid_button">{{section.settings.whatsinside_button1}}</button>
+                </a>
+            </div>
+            <div class="grid-image" id="cryptid-box-img1">
+                <img src="{{section.settings.whatsinside_grid_img1 | img_url: '900x'}}">
+            </div>
+            <div class="grid-image" id="cryptid-box-img2">
+                <img src="{{section.settings.whatsinside_grid_img2 | img_url: '900x'}}">
+            </div>
+            <div class="grid-text">
+                <p>{{section.settings.whatsinside_grid_text2}}</p>
+                <p>{{section.settings.whatsinside_grid_text3}}</p>
+                <p>{{section.settings.whatsinside_grid_text4}}</p>
+                <p>{{section.settings.whatsinside_grid_text5}}</p>
+                <a hrc="{{section.settings.whatsinside_button2_ur}}">
+                    <button class="cryptid_button">{{section.settings.whatsinside_button2}}</button>
+                </a>
+            </div>
+        </div>
+        <div class="whatsinside-closer">
+            <h1>{{section.settings.whatsinside_call_to_action}}</h1>
+            <h2>{{section.settings.whatsinside_call_to_action2}}</h2>
+            <a hrc="{{section.settings.whatsinside_button3_url}}">
+                <button class="cryptid_button">{{section.settings.whatsinside_button3}}</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Cryptid Box What's Inside",
+    "settings": [
+        {
+            "type": "text",
+            "id": "whatsinside_title",
+            "label": "What's Inside Title",
+            "default": "What's Inside?"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_subtitle",
+            "label": "What's Inside Subtitle",
+            "default": "See what Cryptid Crate has to offer!"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_grid_title1",
+            "label": "What's Inside Grid Title",
+            "default": "Delightfully Creepy Cryptids!"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_grid_text1",
+            "label": "What's Inside Grid Text 1",
+            "default": "Paranormal wall art and home decor items handmade by local makers and artists from all over the country. Collectibles that will take your curiosity cabinets to the next level."
+            
+        },
+        {
+            "type": "url",
+            "id": "whatsinside_button1_url",
+            "label": "What's Inside Button 1 URL"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_button1",
+            "label": "Whats Inside Button 1",
+            "default": "Get Started"
+        },
+        {
+            "type": "image_picker",
+            "id": "whatsinside_grid_img1",
+            "label": "Whats Inside Img 1"
+        },
+        {
+            "type": "image_picker",
+            "id": "whatsinside_grid_img2",
+            "label": "Whats Inside Img 2"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_grid_text2",
+            "label": "What's Inside Grid Text 2",
+            "default": "Makes the perfect gift"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_grid_text3",
+            "label": "What's Inside Grid Text 3",
+            "default": "T-Shirts, hats, socks, and other accessories featuring your favorite cryptids, ghosts, and aliens."
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_grid_text4",
+            "label": "What's Inside Grid Text 4",
+            "default": "Books and films by the most talented minds in the cryptid world."
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_grid_text5",
+            "label": "What's Inside Grid Text 5",
+            "default": "Other misc. cryptozoology-themed items that are sure to be conversation starters."
+        },
+        {
+            "type": "url",
+            "id": "whatsinside_button2_url",
+            "label": "What's Inside Button 2 URL"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_button2",
+            "label": "Whats Inside Button 2",
+            "default": "Give a Gift"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_call_to_action",
+            "label": "Whats Inside CTA",
+            "default": "Need more reasons to sign up?"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_call_to_action2",
+            "label": "What's Inside CTA 2",
+            "default": "If you've made it this far, you don't need another reason. Click the button below and let's get weird!"
+        },
+        {
+            "type": "url",
+            "id": "whatsinside_button3_url",
+            "label": "What's Inside Button 3 URL"
+        },
+        {
+            "type": "text",
+            "id": "whatsinside_button3",
+            "label": "Whats Inside Button 3",
+            "default": "Get Started"
+        }
+    ]
+}
+{% endschema %}

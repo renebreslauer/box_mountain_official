@@ -1,3 +1,15 @@
+window.fwSettings = {
+  widget_id: 43000001115,
+}
+!(function () {
+  if ('function' != typeof window.FreshworksWidget) {
+    var n = function () {
+      n.q.push(arguments)
+    }
+    ;(n.q = []), (window.FreshworksWidget = n)
+  }
+})()
+
 $('button#back').on('click', function (e) {
   e.preventDefault()
   window.history.back()

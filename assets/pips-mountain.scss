@@ -1,1 +1,39 @@
 @import './theme.scss';
+@import './custom.scss';
+
+h1 {
+  font-family: 'almaq', sans-serif;
+  font-size: 2.5rem;
+  color: #087b00;
+}
+
+h3 {
+  font-family: 'almaq', sans-serif;
+  font-size: 2rem;
+  color: #899991;
+}
+
+p {
+  font-family: 'almaq', sans-serif;
+  font-size: 1.25rem;
+  color: black;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+.pips-faq-header {
+  h1 {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

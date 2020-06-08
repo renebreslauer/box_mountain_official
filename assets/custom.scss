@@ -56,6 +56,10 @@ h6,
   }
 }
 
+.page-cms-content {
+  margin: 4rem 0;
+}
+
 /*nav*/
 .main_content {
   padding-top: 0;
@@ -275,6 +279,15 @@ a:focus {
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
 }
+
+@media screen and (max-width: 700px) {
+  .reviews-contain {
+    h2 {
+      width: 40vw;
+      margin-left: -2rem;
+    }
+  }
+}
 /*hero boxes*/
 // #MainContent > div:nth-child(2) {
 //   max-width: 2000px;
@@ -350,7 +363,7 @@ a:focus {
   background: url(//cdn.shopify.com/s/files/1/0370/3422/9898/t/2/assets/boxbg.jpg?v=16508749248057844879),
     #3854a0;
   background-size: contain;
-  padding: 80px 0;
+  padding: 40px 0;
   margin: 80px 0;
   width: 100vw;
 }
@@ -362,6 +375,7 @@ a:focus {
 }
 .carousel-contain {
   padding: 0 10%;
+  margin-top: 20px;
 }
 
 .jdgm-star {
@@ -2281,3 +2295,5 @@ a:focus {
   width: 75px;
   margin: 2rem;
 }
+
+// Contact Form
