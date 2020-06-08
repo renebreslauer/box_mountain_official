@@ -294,6 +294,7 @@ a:focus {
     }
   }
 }
+
 /*hero boxes*/
 // #MainContent > div:nth-child(2) {
 //   max-width: 2000px;
@@ -520,6 +521,17 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 610px) {
+  .subpage_hero_text {
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
 // Coming Soon
 .coming_soon {
   height: 50vh;
@@ -717,6 +729,27 @@ a:focus {
     margin-top: 4rem;
     margin-bottom: 4rem;
     padding: 1rem;
+  }
+}
+
+.about-us-hero {
+  padding-top: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+.about-us-hero span,
+.carousel-header span {
+  -webkit-text-decoration: #ff4838 solid underline;
+  text-decoration: #ff4838 solid underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+}
+@media screen and (max-width: 835px) {
+  .about-us-hero {
+    display: block;
+  }
+  .about-us-hero span {
+    display: block;
   }
 }
 

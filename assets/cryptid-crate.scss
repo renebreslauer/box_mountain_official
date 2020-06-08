@@ -40,6 +40,21 @@ p {
   }
 }
 
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
 .cryptid_button {
   padding: 19.2px 80px;
   background-color: #f8f0ab;
@@ -282,10 +297,10 @@ p {
 @media screen and (max-width: 1000px) {
   .cryptid_crate_plans_grid {
     grid-template-columns: repeat(1, 1fr);
-    width: 80vw;
+    width: 90vw;
   }
   .cryptid_crate_plans_subtitle {
-    width: 80vw;
+    width: 90vw;
   }
 }
 
@@ -347,6 +362,31 @@ p {
 }
 .cryptid_plan_image {
   margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 580px) {
+  .cryptid_crate_plans_subtitle {
+    font-size: 18px;
+  }
+  .cryptid_crate_plans_item {
+    width: 300px;
+    h2 {
+      margin: 1rem 0;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .cryptid_crate_plans_item {
+    width: 220px;
+    height: 550px;
+    h2 {
+      margin: 1rem 0;
+      height: auto;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 }
 
 //CRYPTID FAQ
@@ -464,6 +504,22 @@ p {
   &:hover {
     background-color: #d7bee4;
     color: white;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cryptid-hero-text {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 1rem;
+    }
+  }
+  .cryptid_hero_button {
+    padding: 10px 30px;
   }
 }
 

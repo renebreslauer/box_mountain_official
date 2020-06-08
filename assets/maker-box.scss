@@ -141,13 +141,20 @@
 .maker_box_instructions_title {
   h1 {
     font-family: pt-sans-pro, sans-serif;
-    font-size: 32;
+    font-size: 32px;
     padding: 20px 0;
     color: #4a4a4a;
     font-weight: 400;
     text-align: center;
     padding: 0 15px;
     margin: 35px 66px 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .maker_box_instructions_title {
+    h1 {
+      font-size: 24px;
+    }
   }
 }
 
@@ -257,6 +264,14 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 1200px) {
+  .maker_about_hero {
+    h1 {
+      width: 90vw;
+      font-size: 38px;
+    }
+  }
+}
 .maker_about_hero_image {
   width: 100%;
   object-fit: cover;
@@ -267,6 +282,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   box-shadow: 0px 5px 15px #0000001f;
+}
+
+@media screen and (max-width: 1200px) {
+  .maker_about_icon_group {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .maker_icon_group {
   text-align: center;
@@ -291,9 +312,6 @@
     font-weight: 600;
   }
 }
-.printed_solid_image {
-  margin-bottom: 3rem;
-}
 
 .maker_about_contact {
   display: flex;
@@ -303,12 +321,13 @@
   flex-direction: column;
   width: 35rem;
   height: 15rem;
+  margin-top: 2rem;
   box-shadow: 0px 5px 15px #0000001f;
   h2 {
     font-family: roboto, sans-serif;
     font-size: 24px;
     color: #9b9b9b;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
   button {
     background-color: #0172ff;
@@ -325,6 +344,16 @@
   }
 }
 
+@media screen and (max-width: 575px) {
+  .maker_about_contact {
+    width: 80vw;
+    h2 {
+      font-size: 18px;
+      padding: 1rem;
+    }
+  }
+}
+
 // FAQ
 
 .maker-box-faq-group {
@@ -334,6 +363,19 @@
   }
   h3 {
     font-size: 1rem;
+  }
+}
+
+.maker_box_faq {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .page-text {
+    p {
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
 }
 
