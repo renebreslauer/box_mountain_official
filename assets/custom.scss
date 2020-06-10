@@ -105,6 +105,11 @@ a {
 .nav {
   top: 0;
 }
+
+.box_mountain_logo {
+  width: 170px;
+}
+
 .topnavimg {
   max-width: 35px;
   max-height: 35px;
@@ -854,6 +859,16 @@ a:focus {
   }
   input[type='submit']:hover {
     background-color: #2d4789;
+  }
+}
+
+.site-header__cart-count {
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 700px) {
+  .site-header__cart-count {
+    margin-top: -10px;
   }
 }
 

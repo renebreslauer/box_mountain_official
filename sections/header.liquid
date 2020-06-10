@@ -25,7 +25,7 @@
     <div class="announcement-bar">
         <div class="announcement_wrapper">
             <div class="announcement-logo">
-                <a class="site-header__logo-link" href="{{ routes.root_url }}">Box Mountain LLC</a>
+                <a class="site-header__logo-link" href="{{ routes.root_url }}"><img src="{{'box_mountain_logo_white.png' | asset_url}}" class="box_mountain_logo" alt="Box Mountain Logo"></a>
             </div>
             <div class="announcement-links">
                 <a class="site-header__icon site-header__account" href="{{section.settings.catalogue_link}}">
@@ -78,6 +78,11 @@
     "id": "catalogue_link",
     "label": "Catalogue Link"
    
+},
+{
+    "type": "image_picker",
+    "id": "box_mountain_logo",
+    "label": "Box Mountain Logo"
 }
 ]
 }
