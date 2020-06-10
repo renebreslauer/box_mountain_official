@@ -131,6 +131,9 @@
             .announcement-bar a:hover {
                 color: #385e03;
             }
+            .announcement-logo a:not([disabled]):hover {
+            color: #385e03;
+            }
             
        
     </style>
@@ -152,6 +155,7 @@
             <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
                 {{ content_for_layout }}
             </main>
+            {% section 'cryptid-social-media' %}
             {% section 'footer-columns' %}
             {% section 'footer-bottom-bar' %}
 

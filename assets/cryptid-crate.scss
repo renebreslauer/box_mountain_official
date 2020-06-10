@@ -288,7 +288,7 @@ p {
 }
 @media screen and (max-width: 1200px) {
   .cryptid_crate_plans_grid {
-    width: 80vw;
+    width: 90vw;
   }
   .cryptid_crate_plans_subtitle {
     width: 80vw;
@@ -624,5 +624,15 @@ p {
     &:hover {
       background-color: #1ddf3b;
     }
+  }
+}
+
+//Social Media
+.social-media-links {
+  .fab {
+    color: #f8f0ab;
+  }
+  .fab:hover {
+    color: #1ddf3b;
   }
 }

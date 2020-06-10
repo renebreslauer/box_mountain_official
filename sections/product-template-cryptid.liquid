@@ -85,8 +85,11 @@
    border: 1px solid #9caf88;
    color: #9caf88;
  }
- .jdgm-write-rev-link:hover {
+ .jdgm-write-rev-link:not([disabled]):hover {
    border:1px solid white;
+   color: white;
+ }
+ .jdgm-write-rev-link a:hover {
    color: white;
  }
   .jdgm-star {
@@ -127,6 +130,30 @@
 .jdgm--on:before {
   color: white;
 }
+
+.jdgm-rev__author {
+  color: white;
+}
+.jdgm-rev__timestamp {
+  color: white;
+}
+.jdgm-histogram {
+  color: white;
+}
+
+.jdgm-sort-dropdown {
+  color: white;
+}
+
+.jdgm-sort-dropdown-arrow {
+  border-top: 6px solid white;
+}
+
+.social-sharing .btn {
+  background-color: white;;
+}
+
+
 </style>
 
 <div class="product-template__container page-width"

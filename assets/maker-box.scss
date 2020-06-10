@@ -368,6 +368,17 @@
 
 .maker_box_faq {
   margin-top: 3rem;
+  h3 {
+    font-family: roboto, sans-serif;
+    color: #9b9b9b;
+    font-weight: 600;
+    padding: 1rem;
+  }
+  p {
+    color: #9b9b9b;
+    font-weight: 400;
+    font-family: roboto, sans-serif;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -387,8 +398,9 @@
   flex-direction: column;
   width: 100vw;
   background-color: #f8f8f8;
-  padding: 6rem 0;
-  margin-bottom: -95px;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+  margin-bottom: -220px;
   h1 {
     color: #4a4a4a;
     margin-bottom: 3rem;
@@ -774,4 +786,12 @@
 }
 .maker_box_plans_announcement_icon {
   padding-right: 0.1rem;
+}
+
+// Social Media Links
+
+.social-media-links {
+  .fab:hover {
+    color: #45aeed;
+  }
 }

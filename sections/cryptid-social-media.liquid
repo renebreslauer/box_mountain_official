@@ -1,0 +1,39 @@
+<div class="page-wrapper">
+    <div class="social-media-links">
+        <a href="{{section.settings.social_cryptid_fb}}">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="{{section.settings.social_cryptid_twitter}}">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="{{section.settings.social_cryptid_ig}}">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+    </div>
+</div>
+
+
+{% schema %}
+
+{
+        "name": "Cryptid Social",
+        "settings": [
+            {
+                "type": "url",
+                "id": "social_cryptid_fb",
+                "label": "Cryptid Facebook"
+            }, 
+             {
+                "type": "url",
+                "id": "social_cryptid_twitter",
+                "label": "Cryptid Twitter"
+            }, 
+             {
+                "type": "url",
+                "id": "social_cryptid_ig",
+                "label": "Cryptid Instagram"
+            }
+        ]
+    }
+
+{% endschema %}

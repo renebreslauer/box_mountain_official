@@ -1,0 +1,39 @@
+<div class="page-wrapper">
+    <div class="social-media-links">
+        <a href="{{section.settings.social_pips_fb}}">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="{{section.settings.social_pips_twitter}}">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="{{section.settings.social_pips_ig}}">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+    </div>
+</div>
+
+
+{% schema %}
+
+{
+        "name": "Pips Social",
+        "settings": [
+            {
+                "type": "url",
+                "id": "social_pips_fb",
+                "label": "Pips Facebook"
+            }, 
+             {
+                "type": "url",
+                "id": "social_pips_twitter",
+                "label": "Pips Twitter"
+            }, 
+             {
+                "type": "url",
+                "id": "social_pips_ig",
+                "label": "Pips Instagram"
+            }
+        ]
+    }
+
+{% endschema %}

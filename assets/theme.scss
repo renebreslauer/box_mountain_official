@@ -5072,6 +5072,15 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   }
 }
 
+.announcement-logo {
+  a {
+    color: white;
+  }
+  a:not([disabled]):hover {
+    color: grey;
+  }
+}
+
 .site-header__logo-image {
   display: block;
 
