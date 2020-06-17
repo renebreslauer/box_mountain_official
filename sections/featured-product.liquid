@@ -5,7 +5,9 @@
 {% endif %}
 
 <div class="page-width" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="product" data-ajax-enabled="{{ settings.enable_ajax }}">
-
+<div class="feature_product_title">
+<h1>Featured Item</h1>
+</div>
   {% comment %}
     Get first variant, or deep linked one
   {% endcomment %}
@@ -228,7 +230,7 @@
                       {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
                       {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
                 >
-                <h2><a href="{{section.settings.featured_product}}" class="featured_more_info">More Info</a></h2>
+                <h2><a href="{{product.url}}" class="featured_more_info">More Info</a></h2>
                   <button type="submit" name="add"
                     {% unless current_variant.available %} aria-disabled="true"{% endunless %}
                     aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"

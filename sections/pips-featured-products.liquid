@@ -1,0 +1,22 @@
+{% if linklists[linklist].links.size > 0 %}
+<!-- BEGIN table.products -->
+<table class="products">
+{% tablerow link in linklists[linklist].links cols: 3 %}
+<div class="one-third column thumbnail">
+<a href="{{ link.url }}" title="Browse our {{ link.object.title | escape }} collection.">
+{% if link.object.image.src %}
+<!-- collection image -->
+<img src="{{ link.object.image.src | collection_img_url: 'large' }}" alt="{{ link.object.title | escape }}" />
+{% else %}
+<!-- if there's no collection image, show the first product image instead -->
+<img src="{{ link.object.products.first.featured_image | product_img_url: 'large' }}" alt="{{ link.object.title | escape }}" />
+{% endif %}
+<br/><span class="info">{{ link.title }}</span>
+</a>
+</div>
+{% endtablerow %}
+</table>
+<!-- END table.products -->
+{% else %}
+<p>Please {{ 'create a link list' | link_to: '/admin/links' }} that contains links to the collections you wish to feature here. The title of that link list must be <strong>{{ linklist | replace: '-', ' ' | capitalize }}</strong>.</p>
+{% endif %}
