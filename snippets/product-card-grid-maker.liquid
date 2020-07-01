@@ -1,0 +1,159 @@
+<style>
+
+.grid-view-item {
+  background: linear-gradient(79deg, #f7f7f9 0%, #ebf3ff 100%);
+  border: 5px solid #9b9b9b
+  font-family: pt-sans-pro, sans-serif;
+  color: #4a4a4a;
+  padding: 10px;
+border-radius: 20px;
+transition: 0.3s cubic-bezier(.10, .10, 0, 1)
+
+}
+
+.grid-view-item:hover {
+  transform: translate(0px, 2px);
+  -webkit-box-shadow: 0px 10px 49px -26px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 49px -26px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 49px -26px rgba(0,0,0,0.75);
+}
+
+.grid-view-item__header {
+display: grid;
+grid-template-rows: repeat(2,1fr);
+text-align: center;
+}
+
+.grid-view-item__title {
+  font-family: pt-sans-pro, sans-serif;
+  color: #4a4a4a 
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: none;
+  margin-top: 20px;
+  min-height: 40px;
+}
+
+.grid-view-item__link {
+  padding: 20px 10px;
+}
+
+.price--listing {
+  justify-content: center;
+}
+
+.grid-view-item__image {
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.grid-view-item__footer {
+  display: grid;
+  grid-template-rows: repeat(1,1fr);
+  justify-content: center;
+text-align: center;
+position: relative;
+min-height: 40px;
+}
+
+.grid-view-item__footer button {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  height: 20px;
+  width: 30px;
+}
+
+.jdgm-preview-badge  {
+  font-size: 1rem;
+}
+
+
+@media screen and (min-width: 1100px) {
+  .grid-view-item__title {
+  font-size: 1.2rem;
+}
+.jdgm-preview-badge  {
+  font-size: 1.2rem;
+}
+}
+
+@media screen and (max-width: 870px) {
+ 
+
+  .grid-view-item__title {
+    font-size: 0.8rem;
+  }
+  .jdgm-preview-badge  {
+  font-size: 0.8rem;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 749px) {
+   .grid-view-item__title {
+  font-size: 1.2rem;
+}
+.jdgm-preview-badge  {
+  font-size: 1.2rem;
+}
+
+}
+</style>
+
+{% comment %}
+    Renders a product card using "Grid" style
+    Accepts:
+    - max_height: {Number} Maximum height of the product's image (required)
+    - product: {Object} Product Liquid object (required)
+    - show_vendor: {Boolean} Show the product's vendor depending on the section setting (optional)
+
+    Usage:
+    {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+<div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
+    <div class="grid-view-item__header">
+    <div class="h4 grid-view-item__title product-card__title" aria-hidden="true"><a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url | within: collection }}">{{ product.title }}
+        </a>
+    </div>
+    {% include 'product-price-listing-maker', product: product, show_vendor: show_vendor %}
+    </div>
+    {% comment %} <span class="visually-hidden">{{ product.title }}</span> {% endcomment %}
+
+
+  {% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
+  {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
+  {%- assign preview_image = product.featured_media.preview_image -%}
+  {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+  {% unless preview_image == blank %}
+    {% include 'image-style', image: preview_image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
+  {% endunless %}
+
+  <div class="product-card__image-with-placeholder-wrapper" data-image-with-placeholder-wrapper>
+
+    <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper js">
+      <div style="padding-top:{% unless preview_image == blank %}{{ 1 | divided_by: preview_image.aspect_ratio | times: 100 }}%{% else %}100%{% endunless %};">
+        <img id="{{ img_id }}"
+              class="grid-view-item__image lazyload"
+              alt="{{ preview_image.alt }}"
+              data-src="{{ img_url }}"
+              data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+              data-aspectratio="{{ preview_image.aspect_ratio }}"
+              data-sizes="auto"
+              data-image>
+      </div>
+    </div>
+    <div class="placeholder-background placeholder-background--animation" data-image-placeholder></div>
+  </div>
+
+  <noscript>
+    {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
+    <img class="grid-view-item__image" src="{{ preview_image | img_url: image_size, scale: 2 }}" alt="{{ preview_image.alt }}" style="max-width: {{ max_height | times: preview_image.aspect_ratio }}px;">
+  </noscript>
+<div class="grid-view-item__footer">
+{% comment %}Start automatically added Judge.me widget{% endcomment %}
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', concierge_install: true, product: product %}
+{% comment %}End automatically added Judge.me widget{% endcomment %}
+</div>
+</div>
