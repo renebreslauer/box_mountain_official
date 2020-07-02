@@ -1,0 +1,61 @@
+<section class="maker-box-plans-hero">
+    <div class="maker_box_plans_hero_wrapper">
+        <div class="maker_box_plans_hero_text collections_page" style="margin-top: -5rem;">
+            <h1>{{section.settings.maker_box_collections_hero_title}}</h1>
+            <div class="maker_box_plans_hero_divider"></div>
+            <h3>{{section.settings.maker_box_collections_hero_body}}</h3>
+            <button class="maker_collections_button"><a href="{{section.settings.maker_box_collections_hero_button}}">{{section.settings.maker_box_collections_hero_button_text}}</a></button>
+        </div>
+        <img src="{{section.settings.maker_box_collections_hero_image | img_url: '200x'}}" class="maker_box_collections_hero_image">
+    </div>
+    <div class="maker_box_plans_announcement">
+        <img src="{{section.settings.maker_box_collections_announcement_icon | img_url: '35x'}}" class="maker_box_collections_announcement_icon">
+        <p>{{section.settings.maker_box_collections_announcement}}</p>
+    </div>
+</section>
+
+{% schema %}
+{
+"name": "Maker Collections Hero",
+"settings": [
+{ "type": "text",
+    "id": "maker_box_collections_hero_title",
+    "label": "Maker Title",
+    "default": "Plans for every maker."
+},
+{
+    "type": "text",
+    "id": "maker_box_collections_hero_body",
+    "label": "Maker Hero Body",
+    "default": "Discover which plan is best for you."
+},
+{
+    "type": "image_picker",
+    "id": "maker_box_collections_hero_image",
+    "label": "Maker Hero Image"
+},
+{
+    "type": "text",
+    "id": "maker_box_collections_announcement",
+    "label": "Maker Collections Ancmt",
+    "default": "Sign-up today and receive a bonus filament sample in your first box!"
+}, 
+{
+    "type": "image_picker",
+    "id": "maker_box_collections_announcement_icon",
+    "label": "Maker Hero Icon"
+},
+{
+    "type": "url",
+    "id": "maker_box_collections_hero_button",
+    "label": "Collections Button"
+},
+{
+    "type": "text",
+    "id": "maker_box_collections_hero_button_text",
+    "label": "Button Text"
+}
+]
+}
+
+{% endschema %}

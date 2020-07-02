@@ -636,3 +636,18 @@ p {
     color: #1ddf3b;
   }
 }
+
+.bold-ro__prepaid-total {
+  color: white;
+  font-weight: 400;
+}
+.bold-ro__frequency-label {
+  color: white;
+  font-weight: 400;
+}
+.bold-ro__custombutton-4822362620042 {
+  background-color: #62773e;
+}
+.bold-ro__custombutton-4822362620042:not([disabled]):hover {
+  background-color: #94b260;
+}
