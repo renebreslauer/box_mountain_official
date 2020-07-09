@@ -4010,7 +4010,8 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   position: relative;
   border: 2px solid transparent;
 
-  &:not([disabled]):not(.active-thumb):hover {
+  &:not([disabled]
+  ):not(.active-thumb):hover {
     opacity: 0.8;
   }
 
