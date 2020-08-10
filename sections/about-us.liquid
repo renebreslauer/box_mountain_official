@@ -1,13 +1,63 @@
+<style>
+.page-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-illustration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+
+.about_illustration {
+object-fit: contain;
+max-height: 60vh;
+}
+
+.about_illustration_horizontal {
+    display: none;
+}
+
+@media screen and (max-width: 849px) {
+    .page-content-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about_illustration {
+        display: none;
+    }
+    .about_illustration_horizontal {
+        display: flex;
+        padding: 20px;
+        margin-top: 40px;
+    }
+}
+</style>
+
 <div class="page-wrapper">
     <div class="page-text">
     <h1 class="about-us-hero">We're a bunch of nerds. <span>Just. Like. You.</span></h1>
+  
+    <div class="page-content-container">
+        
     <div class="page-cms-content">
      {{page.content}}
      </div>
+     <div class="about-illustration-container">
+     <img src={{ 'about-illustration.png' | asset_url }} class="about_illustration" />
+     </div>
+    </div>
      <div class="boxmtn-quote">
          <div class="quote-red-dash"></div>
          <div class="commitment-quoted">Matt Gorton & Mike Oreszczyn</div>
      </div>
+     <img src={{ 'about-illustration-horizontal.png' | asset_url }} class="about_illustration_horizontal"} />
+
         </div>
     </div>
 </div>

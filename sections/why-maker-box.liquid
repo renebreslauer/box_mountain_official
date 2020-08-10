@@ -1,0 +1,449 @@
+<style>
+.why-maker-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #E9E9E9;
+    padding-bottom: 75px;
+  }
+
+  .recently-featured {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: white;
+   
+  }
+
+  .recently-featured-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 900px; 
+  
+  }
+
+  .recently-featured-logo {
+      padding: 10px;
+  }
+  .why-maker-box_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+  }
+  
+  .maker-box-title h1 {
+
+      font-family: pt-sans-pro, sans-serif;
+      font-size: 32px;
+      padding: 20px 0;
+      color: #4a4a4a;
+      font-weight: 400;
+      text-align: center;
+      padding: 0 15px;
+      margin: 60px 66px 0;
+    
+  }
+  @media screen and (max-width: 350px) {
+    .maker-box-title h1 {
+        font-size: 24px;
+    }
+  }
+  
+  .title_divider {
+    background-color: #0172ff;
+    width: 5rem;
+    height: 0.3rem;
+    text-align: center;
+    display: inline-block;
+    margin: 30px 0 60px;
+  }
+
+  .why-maker-content {
+      background: white;
+      box-shadow: 0 3px 6px rgba(0,0,0,.16);
+      padding: 5px 60px 60px 60px;
+      margin-bottom: 100px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-maker-content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0px 0px 20px 0px;
+      width: 100%;
+  }
+.grid-point {
+    text-align: center;
+    padding: 20px;
+}
+  .grid-point h3 {
+      font-family: 'pt sans', 'sans-serif';
+      font-size: 21px;
+  }
+  .grid-point p {
+      color: #9B9B9B;
+      font-size: 18px;
+  }
+
+  .maker-sign-up-today {
+      background: #0871FF;
+      color: white;
+      text-transform: uppercase;
+      font-family: 'pt sans', 'sans-serif';
+      border: none;
+      font-size: 14px;
+      padding: 10px 15px;
+  }
+  .maker-sign-up-today:hover {
+      outline: none;
+      background-color: #00CCFF;
+  }
+  .maker-sign-up-today:focus {
+      outline: none;
+  }
+
+  .why-maker-review {
+      position: relative;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+  }
+  .white-box {
+      width: 100vw;
+      height: 50%;
+      bottom: 0;
+      background: white;
+      position: absolute;
+  }
+  .grey-box {
+      width: 100vw;
+      height: 50%;
+      top: 0;
+      background: #E9E9E9;
+      position: absolute;
+  }
+  .yellow-box {
+      position: absolute;
+      height: 100%;
+      width: 800px;
+      background: rgb(252,192,54);
+        background: linear-gradient(45deg, rgba(252,192,54,1) 0%, rgba(253,174,50,1) 100%);
+      box-shadow: 0 3px 6px rgba(0,0,0,.16);
+
+  }
+.quote h3 {
+    font-family: 'pt sans', 'sans-serif';
+    font-size: 26px;
+    color: white;
+    
+}
+.quote h3:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.quote a {
+    color: #0871FF;
+}
+
+.quote {
+    height: 100%;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .recently-featured-logos {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: 60px;
+     
+  }
+
+  .lottie-animation {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 200px;
+  }
+
+.quote-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    margin-left: -150px;
+    margin-top: -100px;
+}
+
+.mailing-list {
+    background: url({{ 'maker-box-image.png' | asset_url }});
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 20px;   
+}
+
+.mailing-list-content h3 {
+    color: white;
+}
+#drip-email {
+    background-color: white;
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#drip-email:focus {
+    outline: none;
+}
+.sign-up-button {
+background: #191938;
+color: white;
+text-transform: uppercase;
+      font-family: 'pt sans', 'sans-serif';
+      border: none;
+      font-size: 14px;
+}
+.sign-up-button:hover {
+    background: #0172ff;
+}
+.sign-up-button:focus {
+    outline: none;
+}
+
+.page-wrapper {
+    display: none;
+}
+
+.site-footer-columns {
+    margin-top: -100px;
+}
+
+.fab {
+    color: white;
+}
+.fab:hover {
+    color: #191938;
+}
+
+.social-media-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .why-maker-content-grid {
+        grid-template-columns: 1fr;
+    }
+.yellow-box {
+    width: 90vw;
+}
+.quote {
+    padding: 20px;
+}
+    .quote-image {
+        display: none;
+    }
+    .recently-featured-logos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .quote h3 {
+        font-size: 18px;
+    }
+    .recently-featured-logos {
+        grid-template-columns: 1fr 1fr;
+    }
+    .why-maker-content {
+        box-shadow: none;
+        background-color: #E9E9E9;
+    }
+}
+</style>  
+
+<section class="why-maker-box">
+    <div class="why-maker-box_container">
+        <div class="maker-box-title">
+        <h1>Why Maker Box?</h1>
+        </div>
+        <span class="title_divider"></span>
+        <div class="why-maker-content">
+            <div class='why-maker-content-grid'>
+                <div class='grid-point'>
+                    <div class='lottie-animation'>
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_CpxUsg.json"  style="height: 100px;" background="transparent"  speed="1" loop  autoplay></lottie-player>         
+                </div>
+                    <h3>Filaments from the top brands</h3>
+                    <p>Filaments like Pronto-Pasta Stainless Steel, Taulman 910, and Hatchbox PLA Wood</p>
+                </div>
+                <div class='grid-point'>
+                    <div class='lottie-animation'>
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_axLpK8.json" style="height: 250px; object-fit: cover; margin-top: 5px;"  background="transparent"  speed="1" loop  autoplay></lottie-player>         
+                    </div>
+                    <h3>Flexible subscription options</h3>
+                    <p>Choose from monthly or bi-monthly delivery, with no contracts or cancellation fees</p>
+                </div>
+                <div class='grid-point'>
+                    <div class='lottie-animation'>
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_jieat2.json" style="height: 80px;"  background="transparent"  speed="1" loop  autoplay></lottie-player>         
+                    </div>
+                    <h3>Industry leading provider</h3>
+                    <p>The original filament subscription service, with over 20,000 boxes shipped</p>
+                </div>
+            </div>
+            <button class='maker-sign-up-today'>Sign Up Today</button>
+        </div>
+       
+        </div>
+        </div>
+        <div class='why-maker-review'>
+            <div class='grey-box'>
+            </div>
+            <div class='white-box'>
+            </div>
+            <div class='yellow-box'>
+                <img src='{{ 'quotes.png' | asset_url }}' class='quote-image'/>
+                <div class='quote'>
+                <h3>"[…] because of this box, the samples I got, I like how it performs - I would buy this filament.
+                […] and that’s the point of this. To try out a filament to see if you want to buy a larger roll of it… and I’m going to buy a larger roll of it because this is freaking cool."</h3>
+                <h3>- Joel from <a href='the3dprintingnerd.com'>3D Printing Nerd</a> on the virtues of our Maker Box subscriptions</h3>
+            </div>
+            </div>
+        </div>
+        <div class='recently-featured'>
+        <div class='recently-featured-container'>
+            <div class='maker-box-title'>
+                <h1>Recently Featured Filaments</h1>
+            </div>
+            <span class="title_divider"></span>
+            <div class='recently-featured-logos'>
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_1 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_2 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_3 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_4 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_5 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_6 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_7 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_8 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_9 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_10 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_11 | img_url: '200x' }}">
+                <img class="recently-featured-logo" src="{{section.settings.recently_featured_filaments_12 | img_url: '200x' }}">
+            </div>
+        </div>
+    </div>
+    <div class='mailing-list'>
+        <div class='mailing-list-content'>
+            <h3>Stay updated with Maker Box</h3>
+            <form action="https://www.getdrip.com/forms/577145636/submissions" method="post" data-drip-embedded-form="577145636" id="drip-ef-577145636">
+                <div>
+                    <input type="email" id="drip-email" name="fields[email]" value="" placeholder="Email Address">
+                </div>
+ 
+                <div style="display: none;" aria-hidden="true">
+                  <label for="website">Website</label><br>
+                  <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="">
+                </div>
+                
+                <div>
+                  <input class='sign-up-button' type="submit" value="Sign Up" data-drip-attribute="sign-up-button">
+                </div>
+              </form>
+  {% include 'maker-social-media' %}
+        </div>
+          
+
+    </div>
+</section>
+
+{% schema %}
+
+{
+    "name": "Recently Featured Logo",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_1",
+            "label": "Recently Featured Filaments 1"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_2",
+            "label": "Recently Featured Filaments 2"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_3",
+            "label": "Recently Featured Filaments 3"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_4",
+            "label": "Recently Featured Filaments 4"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_5",
+            "label": "Recently Featured Filaments 5"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_6",
+            "label": "Recently Featured Filaments 6"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_7",
+            "label": "Recently Featured Filaments 7"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_8",
+            "label": "Recently Featured Filaments 8"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_9",
+            "label": "Recently Featured Filaments 9"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_10",
+            "label": "Recently Featured Filaments 10"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_11",
+            "label": "Recently Featured Filaments 11"
+        },
+        {
+            "type": "image_picker",
+            "id": "recently_featured_filaments_12",
+            "label": "Recently Featured Filaments 12"
+        }
+    ]
+}
+
+{% endschema %}

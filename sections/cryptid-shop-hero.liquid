@@ -1,0 +1,103 @@
+<style>
+.cryptid-shop-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 100%;
+    flex-direction: column;
+    background-image: url({{ 'starry-sky.png' | asset_url }});
+    background-position: top;
+    background-size: contain;
+    /* background: #385e05; */
+    margin-top: -60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cryptid-shop-hero h2 {
+    font-family: 'bangers', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+}
+
+
+.trees-image {
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+    min-height: 20%;
+}
+
+.bigfoot {
+position: absolute;
+bottom: 5%;
+height: 90%;
+right: 10%;
+z-index: 0;
+}
+
+.hero-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-button {
+    background: #385e05;
+    border: 2px solid #F8F0AB;
+    color: #F8F0AB;
+    border-radius: 10px;
+    font-family: 'pt sans', sans-serif;
+    padding: 10px 15px;
+}
+
+.hero-button:hover {
+    outline: none;
+    background: #F8F0AB;
+    color: #385e05;
+}
+
+.hero-button:focus {
+    outline: none;
+}
+
+
+.cryptid-shop-hero-wrapper {
+    width: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1335px) {
+    .cryptid-shop-hero-wrapper {
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .bigfoot {
+        bottom: 0;
+        margin-bottom: -20px;
+    }
+}
+
+</style>
+
+<div class="cryptid-shop-hero">
+<img src='{{ 'trees.png' | asset_url }}' class='trees-image' />
+
+    <div class='cryptid-shop-hero-wrapper'>
+<img src='{{ 'bigfoot.png' | asset_url }}' class='bigfoot' />
+<div class='hero-text'>
+<h2>Capture a Cryptid Every Month</h2>
+<a href="https://boxmountainllc.com/pages/cryptid-crate-plans"><button class='hero-button'>Learn More</button></a>
+    </div>
+ </div>
